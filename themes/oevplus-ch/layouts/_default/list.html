@@ -1,1 +1,3 @@
-list
+{{ range .RegularPages }}
+{{ .Render "single" }}x
+{{ end }}

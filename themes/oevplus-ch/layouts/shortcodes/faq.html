@@ -1,0 +1,4 @@
+{{ with .Site.GetPage "/faq" }}
+<h3>{{ .Title }}</h3>
+{{ .Render "list"}}
+{{ end }}

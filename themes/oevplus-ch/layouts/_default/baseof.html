@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head.html" . -}}
+    <link rel="stylesheet" href='{{ (resources.Get "scss/app.scss" | resources.ToCSS | resources.Minify).Permalink }}' media="all">
     <body>
         {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
+        <main class="content my-4">
+            <div class="container">
+                {{- block "main" . }}{{- end }}
+            </div>
+        </main>
         {{- partial "footer.html" . -}}
     </body>
 </html>

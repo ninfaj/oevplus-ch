@@ -5,3 +5,5 @@ menu: main
 ---
 
 APP Inhalt
+
+{{< faq >}}
