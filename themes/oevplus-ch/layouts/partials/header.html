@@ -1,0 +1,7 @@
+<nav class="navbar is-transparent is-fixed-top">
+    <div class="navbar-end">
+        {{ range where .Site.Pages ".Params.menu" "main" }}
+        <a class="navbar-item" href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ end }}
+    </div>
+</nav>

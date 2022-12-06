@@ -1,8 +1,3 @@
-{{ range .Pages }}
-{{ range .Pages }}
-
-    <h1>{{ .Title}}</h1>
-    <p>{{ .Content }}</p>
-
-{{ end }}
+{{ with .GetPage "home" }}
+    {{ .Render "single" }}
 {{ end }}
