@@ -10,5 +10,3 @@ APP Inhalt
 {{< faq >}}
 
 t﻿ext unterhalb
-
-{{< faq >}}
