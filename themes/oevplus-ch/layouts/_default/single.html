@@ -1,4 +1,5 @@
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
+    <img src="{{ .Params.featuredImage }}" />
     <p>{{ .Content | markdownify }}</p>
 {{ end }}
