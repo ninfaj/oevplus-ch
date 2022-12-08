@@ -12,6 +12,8 @@
 
   <script>
 
+    CMS.registerPreviewStyle("/scss/app.min.css");
+
     CMS.registerEditorComponent({
       id: "faq",
       label: "FAQ",
@@ -20,9 +22,9 @@
           return `{{< faq >}}`;
       },
       toPreview: function(obj) {
-          return `{{< faq >}}`;
+          return `<div class="previewBox">{{< faq >}}</div>`;
       },
-  });
+    });
 
   </script>
 

@@ -12,14 +12,16 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "featuredImage", widget: "image", choose_url: false}
+      - {label: "Featured Image", name: "featuredImage", widget: "image", choose_url: false, editor: {preview: false}}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "faq"
     label: "FAQ" # Used in the UI
     folder: "content/faq" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    filter: {field: "editable", value: true}
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "editable", name: "editable", widget: "hidden", default: true}
       - {label: "position", name: "weight", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}

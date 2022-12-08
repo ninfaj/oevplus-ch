@@ -1,0 +1,12 @@
+.featuredImage {
+    width: 25%;
+}
+
+.previewBox {
+    @extend .notification;
+}
+
+.frame-content {
+    @extend .content;
+    @extend .container;
+}

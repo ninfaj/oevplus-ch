@@ -1,7 +1,7 @@
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
     {{ if .Params.featuredImage }}
-        <img src="{{ .Params.featuredImage }}" style="width: 25%;" />
+        <img class="featuredImage" src="{{ .Params.featuredImage }}" />
     {{ end }}
     <p>{{ .Content | markdownify }}</p>
 {{ end }}
