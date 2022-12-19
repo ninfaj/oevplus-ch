@@ -1,7 +1,14 @@
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
-    {{ if .Params.featuredImage }}
-        <img class="featuredImage" src="{{ .Params.featuredImage }}" />
-    {{ end }}
     <p>{{ .Content | markdownify }}</p>
+    {{ range .Params.sections }}
+    <section class="{{ .color }} {{ .class }}">
+        <div class="container">
+        {{ if .title }}
+            <h2>{{ .title }}</h2>
+        {{ end }}
+        <p>{{ .body | markdownify }}</p>
+    </div>
+    </section>
+    {{ end }}
 {{ end }}

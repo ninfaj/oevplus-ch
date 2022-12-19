@@ -25,21 +25,23 @@ collections:
           label: "Sections",
           name: "sections",
           widget: "list",
-          summary: "{{fields.type}}",
+          summary: "{{fields.title}} ({{fields.color}})",
           fields:
             [
               {
-                label: "Type",
-                name: "type",
+                label: "Farbe",
+                name: "color",
                 widget: "select",
                 options:
                   [
-                    { label: "Abschnitt Weiss", value: "white" },
-                    { label: "Abschnitt Grau", value: "light" },
-                    { label: "Abschnitt Blau", value: "Blue" },
+                    { label: "Weiss", value: "white" },
+                    { label: "Grau", value: "light" },
+                    { label: "Blau", value: "blue" },
+                    { label: "Dunkelblau", value: "darkblue" },
                   ],
               },
-              { label: "Title", name: "title", widget: "string" },
+              { label: "CSS Klasse", name: "class", widget: "string", required: false },
+              { label: "Title", name: "title", widget: "string", required: false },
               { label: "Body", name: "body", widget: "markdown" },
             ],
         }

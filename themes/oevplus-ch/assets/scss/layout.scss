@@ -8,5 +8,15 @@ section {
     &.blue {
         background-color: $cyan_dark;
         color: $white;
+        h1, h2, h3 {
+            color: $white;
+        }
+    }
+    &.darkblue {
+        background-color: $darkblue;
+        color: $white;
+        h1, h2, h3 {
+            color: $white;
+        }
     }
 }
