@@ -22,6 +22,7 @@ sections:
       Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc., li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilit de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.
 
       Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental: in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.
+    color: white
   - type: Blue
     title: Ein blauer Abschnitt
     body: >-
@@ -42,6 +43,7 @@ sections:
 
 
       Ribeye boudin pancetta andouille ball tip tri-tip corned beef tenderloin ham hock. Ham frankfurter beef flank, pork belly shoulder tail short loin sausage pork drumstick corned beef boudin capicola tri-tip. Jerky ribeye tri-tip hamburger salami ground round andouille shankle swine. Alcatra frankfurter short loin brisket shankle strip steak jerky pork loin chuck. Bacon turkey tri-tip ham pastrami, drumstick salami leberkas prosciutto brisket ham hock.
+    color: light
   - type: light
     title: Ein grauer Abschnitt
     body: >-
@@ -57,6 +59,7 @@ sections:
 
 
       Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm grosse Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, ausser um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu geniessen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht?
+    color: blue
 ---
 
 # heading 1
