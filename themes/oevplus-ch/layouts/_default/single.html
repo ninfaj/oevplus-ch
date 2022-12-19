@@ -1,14 +1,12 @@
 {{ define "main" }}
-    <h2>{{ .Title }}</h2>
-    <p>{{ .Content | markdownify }}</p>
-    {{ range .Params.sections }}
-    <section class="{{ .color }} {{ .class }}">
-        <div class="container">
+{{ range .Params.sections }}
+<section class="{{ .color }} {{ .class }}">
+    <div class="container">
         {{ if .title }}
-            <h2>{{ .title }}</h2>
+        <h2>{{ .title }}</h2>
         {{ end }}
         <p>{{ .body | markdownify }}</p>
     </div>
-    </section>
-    {{ end }}
+</section>
+{{ end }}
 {{ end }}

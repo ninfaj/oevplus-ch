@@ -1,4 +1,5 @@
 section {
+    @extend .py-6;
     &.white {
         background-color: $white;
     }
