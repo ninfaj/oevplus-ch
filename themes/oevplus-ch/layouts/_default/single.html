@@ -1,5 +1,9 @@
 {{ define "main" }}
 {{ range .Params.sections }}
+<div class="container">
+    hier<br />
+    {{ .Content | markdownify }}
+    </div>
 <section class="{{ .color }} {{ .class }}">
     <div class="container">
         {{ if .title }}

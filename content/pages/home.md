@@ -85,3 +85,6 @@ sections:
       {{< faq >}}
     color: white
 ---
+
+
+{{< contact >}}
