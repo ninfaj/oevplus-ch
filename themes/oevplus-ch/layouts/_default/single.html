@@ -1,16 +1,36 @@
 {{ define "main" }}
-{{ range .Params.sections }}
-<div class="container">
-    hier<br />
-    {{ .Content | markdownify }}
-    </div>
-<section class="{{ .color }} {{ .class }}">
-    <div class="container">
-        {{ if .title }}
-        <h2>{{ .title }}</h2>
-        {{ end }}
-        <p>{{ .body | markdownify }}</p>
+
+
+<section class="white">
+    <div class="container text-big">
+        <div class="columns is-justify-content-center is-align-items-center">
+            <div class="column">
+                <h1>{{ .Title }}</h1>
+                <p>{{ .Summary | markdownify }}</p>
+                {{ if .Params.introLinkHref }}
+                    <a class="button is-primary" href="{{ .Params.introLinkHref }}">{{ or .Params.introLinkLabel .Params.introLinkHref }}</a>
+                {{ end }}
+            </div>
+            {{ if .Params.featuredImage }}
+                <div class="column is-one-third">
+                    <img src="{{ .Params.featuredImage }}" />
+                </div>
+            {{ end }}
+        </div>
+
     </div>
 </section>
-{{ end }}
+
+<section class="blue">
+    <div class="container">
+        {{- partial "carousel.html" . -}}
+    </div>
+</section>
+
+<section class="white">
+    <div class="container">
+        {{ .Content }}
+    </div>
+</section>
+
 {{ end }}

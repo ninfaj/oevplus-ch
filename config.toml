@@ -5,3 +5,4 @@ title = 'My New Hugo Site'
 theme = 'oevplus-ch'
 
 [markup.goldmark.renderer]
+  unsafe = true

@@ -1,3 +1,29 @@
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: $heading-family;
+}
+
+h1 {
+    @extend .is-size-2;
+}
+
+h2 {
+    @extend .is-size-3;
+}
+
+h3 {
+    @extend .is-size-4;
+}
+
+.text-big {
+    @extend .is-size-5;
+}
+
+.text-normal {
+    @extend .is-size-6;
+}
+
+.text-small {
+    @extend .is-size-7;
 }

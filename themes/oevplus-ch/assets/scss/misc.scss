@@ -10,3 +10,27 @@
     @extend .content;
     @extend .container;
 }
+
+// START splide slider
+.splide {
+    @extend .mb-4;
+    figcaption {
+      @extend .p-2;
+      @extend .pb-0;
+    }
+  }
+  .splide li {
+    margin: 0 !important;
+  }
+  .splide__pagination {
+    position: relative;
+    padding: 0;
+}
+.splide__pagination__page {
+    background: $beige3;
+    opacity: 1;
+    &.is-active {
+      background-color: $yellow;
+    }
+  }
+  // END splide slider

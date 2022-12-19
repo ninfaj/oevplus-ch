@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href='{{ (resources.Get "vendor/splide.min.css").Permalink }}'>
     <link rel="stylesheet" href='{{ (resources.Get "scss/app.scss" | resources.ToCSS | resources.Minify).Permalink }}' media="all">
     <body>
         {{- partial "header.html" . -}}
@@ -8,9 +9,11 @@
         </main>
         {{- partial "footer.html" . -}}
 
+        {{ $splide := resources.Get "vendor/splide.min.js" }}
+        <script src="{{ $splide.Permalink }}"></script>
+        
         {{ $main := resources.Get "js/main.js" }}
         {{ $js := slice $main | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint }}
-
         <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
     </body>
 </html>
