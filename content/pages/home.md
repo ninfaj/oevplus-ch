@@ -72,3 +72,5 @@ Ut wisi [ein Link auf google](https://google.ch) enim ad minim veniam, quis nost
 - einzelne Elemente könnnen auch über mehrere Zeilen gehen, wenn es sehr viel Text hat... Wobei es braucht schon sehr sehr sehr viel Text
 
 ![ein Bild](https://via.placeholder.com/400x250 "ein Bild")
+
+{{< contact >}}

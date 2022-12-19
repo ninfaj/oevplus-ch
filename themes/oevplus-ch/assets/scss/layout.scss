@@ -1,0 +1,12 @@
+section {
+    &.white {
+        background-color: $white;
+    }
+    &.light {
+        background-color: $beige3;
+    }
+    &.blue {
+        background-color: $cyan_dark;
+        color: $white;
+    }
+}

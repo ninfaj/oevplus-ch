@@ -1,7 +1,20 @@
 <nav class="navbar is-primary">
-    <div class="navbar-end">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="{{ .Site.BaseURL }}">
+            {{ $logo := resources.Get "images/logo.svg" }}
+          <img src="{{ print .Site.BaseURL $logo }}" alt="öv Plus">
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-nav">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="main-nav" class="navbar-end navbar-menu">
+        {{ $currentSite := . }}
         {{ range where .Site.Pages ".Params.menu" "main" }}
-        <a class="navbar-item" href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ $active := and (eq $currentSite.Permalink .Permalink) "is-active" }}
+            <a class="navbar-item {{$active}}" href="{{ .Permalink }}">{{ .Title }}</a>
         {{ end }}
     </div>
 </nav>

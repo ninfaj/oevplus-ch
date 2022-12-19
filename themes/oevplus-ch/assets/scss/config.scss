@@ -1,4 +1,36 @@
-$primary: #1D4050;
+// colors
+$darkblue: #1D4050;
+$cyan_dark: #0D7294;
+$cyan: #1196C3;
+$cyan_light: #77D4F3;
+$beige: #6F6D58;
+$beige1: #BBB9A8;
+$beige2: #EEEEE9;
+$beige3: #F5F5F2;
+$yellow: #F3E01A;
+$white: #fff;
 
-$footer-background-color: #222;
-$footer-color: #f6f6f6;
+$primary: $cyan_dark;
+
+// Typo
+$link: $primary;
+$heading-family: "comic sans ms", sans-serif;
+$body-family: "open sans", sans-serif;
+// h1 36 regular 48 officina
+// h2 30 regular 38 officina
+// h3 26 regular 34 officina
+
+// body
+// big 18
+// default 16
+// small 13
+
+
+// Layout
+$container-max-width: 1080px;
+
+// navbar
+$navbar-item-active-background-color: transparent !important;
+
+// footer
+$footer-background-color: $beige2;

@@ -3,11 +3,14 @@
     <link rel="stylesheet" href='{{ (resources.Get "scss/app.scss" | resources.ToCSS | resources.Minify).Permalink }}' media="all">
     <body>
         {{- partial "header.html" . -}}
-        <main class="content my-4">
-            <div class="container">
-                {{- block "main" . }}{{- end }}
-            </div>
+        <main class="my-4 content">
+            {{- block "main" . }}{{- end }}
         </main>
         {{- partial "footer.html" . -}}
+
+        {{ $main := resources.Get "js/main.js" }}
+        {{ $js := slice $main | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint }}
+
+        <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
     </body>
 </html>
