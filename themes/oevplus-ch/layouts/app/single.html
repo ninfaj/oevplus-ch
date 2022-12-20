@@ -1,0 +1,58 @@
+{{ define "main" }}
+{{- partial "intro.html" . -}}
+<section class="blue">
+  <div class="container">
+    <div class="columns is-justify-content-center is-align-items-center">
+      <div class="column">
+        <h1>{{ .Params.promo.title }}</h1>
+        <p>{{ .Params.promo.text | markdownify }}</p>
+        {{- if .Params.promo.buttonHref -}}
+        <a class="button is-light" href="{{ .Params.promo.buttonHref }}">{{ or .Params.promo.buttonLabel
+          .Params.promo.buttonHref }}</a>
+        {{- end -}}
+      </div>
+    </div>
+  </div>
+</section>
+{{- partial "content.html" . -}}
+
+<section class="light">
+  <div class="container">
+    <h2>{{ .Params.video.title }}</h2>
+    <p>{{ .Params.video.text | markdownify }}</p>
+
+    <div class="tabs is-toggle is-centered">
+      <ul>
+        {{- range .Params.video.videos -}}
+        <li>
+          <!-- is-active -->
+          <a><span>{{ .title }}</span></a>
+        </li>
+        {{- end -}}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="white">
+  <div class="container">
+    <h2>{{ .Params.faq.title }}</h2>
+    {{- if .Params.faq.text -}}
+    <p>{{ .Params.faq.text | markdownify }}</p>
+    {{- end -}}
+    {{- range .Params.faq.items -}}
+    <article class="panel">
+      <div class="panel-heading">
+        {{ .title }}
+      </div>
+      <div class="panel-block">
+        <div>{{ .text | markdownify }}</div>
+      </div>
+    </article>
+    {{- end -}}
+  </div>
+</section>
+
+
+
+{{ end }}

@@ -24,17 +24,24 @@ collections:
             ],
         }
       - {
-        label: "TUS",
-        name: "tus",
-        widget: "list",
-        collapsed: true,
-        summary: "{{fields.title}}",
-        fields:
-          [
-            {label: "Title", name: "title", widget: "string"},
-            {label: "Image", name: "image", widget: "image", chooseUrl: false},
-            {label: "url", name: "url", widget: "string"},
-          ],
+          label: "Carousel",
+          name: "carousel",
+          widget: "list",
+          collapsed: true,
+          summary: "{{fields.title}}",
+          fields:
+            [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Text", name: "text", widget: "markdown" },
+              {
+                label: "Image",
+                name: "image",
+                widget: "image",
+                chooseUrl: false,
+              },
+              { label: "LinkHref", name: "linkHref", widget: "string" },
+              { label: "LinkLabel", name: "linkLabel", widget: "string" },
+            ],
         }
       - { label: "Content", name: "body", widget: "markdown" }
 
@@ -57,88 +64,102 @@ collections:
             ],
         }
       - {
-        label: "Carousel",
-        name: "carousel",
-        widget: "list",
-        collapsed: true,
-        summary: "{{fields.title}}",
-        fields:
-          [
-            {label: "Title", name: "title", widget: "string"},
-            {label: "Text", name: "text", widget: "markdown"},
-            {label: "Image", name: "image", widget: "image", chooseUrl: false},
-            {label: "LinkHref", name: "linkHref", widget: "string"},
-            {label: "LinkLabel", name: "linkLabel", widget: "string"},
-          ],
+          label: "TUS",
+          name: "tus",
+          widget: "list",
+          collapsed: true,
+          summary: "{{fields.title}}",
+          fields:
+            [
+              { label: "Title", name: "title", widget: "string" },
+              {
+                label: "Image",
+                name: "image",
+                widget: "image",
+                chooseUrl: false,
+              },
+              { label: "url", name: "url", widget: "string" },
+            ],
         }
       - { label: "Content", name: "body", widget: "markdown" }
 
-  - name: "pages"
-    label: "Pages" # Used in the UI
-    folder: "content/pages" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  - name: "App"
+    label: "App"
+    folder: "content/app"
+    create: false
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "markdown" }
       - {
-          label: "Featured Image",
-          name: "featuredImage",
-          widget: "image",
-          required: false,
-          choose_url: false,
+          label: "Intro",
+          name: "intro",
+          collapsed: true,
+          widget: "object",
+          fields:
+            [
+              { label: "Text", name: "text", widget: "markdown" },
+              { label: "Button Label", name: "buttonLabel", widget: "string" },
+              { label: "Button Link", name: "buttonHref", widget: "string" },
+            ],
+        }
+      - {
+          label: "FAQ",
+          name: "faq",
+          collapsed: true,
+          widget: "object",
+          fields:
+            [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Text", name: "text", widget: "markdown" },
+              {
+                label: "Items",
+                name: "items",
+                widget: "list",
+                summary: "{{fields.title}}",
+                fields:
+                  [
+                    { label: "Title", name: "title", widget: "string" },
+                    { label: "Text", name: "text", widget: "markdown" },
+                  ],
+              },
+            ],
         }
       - { label: "Content", name: "body", widget: "markdown" }
-  - name: "carousel"
-    label: "Home - Carousel Item" # Used in the UI
-    folder: "content/carousel" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Position", name: "weight", widget: "number" }
-      - {
-          label: "Featured Image",
-          name: "featuredImage",
-          widget: "image",
-          choose_url: false,
-        }
-      - { label: "Button Link", name: "linkHref", widget: "string" }
-      - { label: "Button Text", name: "linkLabel", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "tus"
-    label: "About - TUs" # Used in the UI
-    folder: "content/tus" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Position", name: "weight", widget: "number" }
-      - {
-          label: "Image",
-          name: "featuredImage",
-          widget: "image",
-          choose_url: false,
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "videos"
-    label: "APP - Videos" # Used in the UI
-    folder: "content/app-videos" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Position", name: "weight", widget: "number" }
-      - { label: "Video", name: "video", widget: "file", choose_url: false }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "faq"
-    label: "App - FAQ" # Used in the UI
-    folder: "content/faq" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    filter: { field: "editable", value: true }
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Editable", name: "editable", widget: "hidden", default: true }
-      - { label: "Position", name: "weight", widget: "number" }
-      - { label: "Body", name: "body", widget: "markdown" }
+
+  # - name: "pages"
+  #   label: "Pages" # Used in the UI
+  #   folder: "content/pages" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Summary", name: "summary", widget: "markdown" }
+  #     - {
+  #         label: "Featured Image",
+  #         name: "featuredImage",
+  #         widget: "image",
+  #         required: false,
+  #         choose_url: false,
+  #       }
+  #     - { label: "Content", name: "body", widget: "markdown" }
+
+  # - name: "videos"
+  #   label: "APP - Videos" # Used in the UI
+  #   folder: "content/app-videos" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Position", name: "weight", widget: "number" }
+  #     - { label: "Video", name: "video", widget: "file", choose_url: false }
+  #     - { label: "Body", name: "body", widget: "markdown" }
+  # - name: "faq"
+  #   label: "App - FAQ" # Used in the UI
+  #   folder: "content/faq" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   filter: { field: "editable", value: true }
+  #   fields: # The fields for each document, usually in front matter
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Editable", name: "editable", widget: "hidden", default: true }
+  #     - { label: "Position", name: "weight", widget: "number" }
+  #     - { label: "Body", name: "body", widget: "markdown" }
