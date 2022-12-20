@@ -150,6 +150,69 @@ collections:
             ],
         }
 
+  - name: "Abfahrtsanzeige"
+    label: "Abfahrtsanzeige"
+    folder: "content/departures"
+    create: false
+    delete: false
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Intro",
+          name: "intro",
+          collapsed: true,
+          widget: "object",
+          fields:
+            [
+              { label: "Text", name: "text", widget: "markdown" },
+              { label: "Button Label", name: "buttonLabel", widget: "string" },
+              { label: "Button Link", name: "buttonHref", widget: "string" },
+            ],
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  - name: "Ereignismeldungen"
+    label: "Ereignismeldungen"
+    folder: "content/incidents"
+    create: false
+    delete: false
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Intro",
+          name: "intro",
+          collapsed: true,
+          widget: "object",
+          fields:
+            [
+              { label: "Text", name: "text", widget: "markdown" },
+              { label: "Button Label", name: "buttonLabel", widget: "string" },
+              { label: "Button Link", name: "buttonHref", widget: "string" },
+            ],
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  - name: "Fahrplan"
+    label: "Fahrplan"
+    folder: "content/schedule"
+    create: false
+    delete: false
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Intro",
+          name: "intro",
+          collapsed: true,
+          widget: "object",
+          fields:
+            [
+              { label: "Text", name: "text", widget: "markdown" },
+              { label: "Button Label", name: "buttonLabel", widget: "string" },
+              { label: "Button Link", name: "buttonHref", widget: "string" },
+            ],
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
+
   - name: "Contact"
     label: "Contact"
     folder: "content/contact"
@@ -167,10 +230,10 @@ collections:
           widget: "object",
           fields:
             [
-              {label: "fullname", name: "fullname", widget: "string"},
-              {label: "mail", name: "mail", widget: "string"},
-              {label: "phone", name: "phone", widget: "string"},
-              {label: "message", name: "message", widget: "string"},
-              {label: "send", name: "send", widget: "string"},
+              {label: "Fullname", name: "fullname", widget: "string"},
+              {label: "Email", name: "email", widget: "string"},
+              {label: "Phone", name: "phone", widget: "string"},
+              {label: "Message", name: "message", widget: "string"},
+              {label: "Send", name: "send", widget: "string"},
             ],
         }

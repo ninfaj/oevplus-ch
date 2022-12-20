@@ -5,7 +5,7 @@
 
         <form class="my-4" action="" method="post">
             <div class="field">
-                <label class="label" for="fullname">Name und Vorname</label>
+                <label class="label" for="fullname">{{ .Params.labels.fullname }}</label>
                 <div class="control">
                     <input class="input" type="text" name="fullname" id="fullname" required>
                 </div>
@@ -14,7 +14,7 @@
             <div class="columns">
                 <div class="column">
                     <div class="field">
-                        <label class="label" for="email">E-Mail Adresse</label>
+                        <label class="label" for="email">{{ .Params.labels.email }}</label>
                         <div class="control">
                             <input class="input" type="email" name="email" id="email" required>
                         </div>
@@ -22,7 +22,7 @@
                 </div>
                 <div class="column">
                     <div class="field">
-                        <label class="label" for="phone">Telefonnummer</label>
+                        <label class="label" for="phone">{{ .Params.labels.phone }}</label>
                         <div class="control">
                             <input class="input" type="tel" name="phone" id="phone">
                         </div>
@@ -31,7 +31,7 @@
             </div>
 
             <div class="field">
-                <label class="label" for="message" required>Nachricht</label>
+                <label class="label" for="message" required>{{ .Params.labels.message }}</label>
                 <div class="control">
                     <textarea class="textarea" name="message" id="message"></textarea>
                 </div>
@@ -39,7 +39,7 @@
 
             <div class="field">
                 <div class="control">
-                  <button class="button is-link">Absenden</button>
+                  <button class="button is-link">{{ .Params.labels.send }}</button>
                 </div>
               </div>
 
