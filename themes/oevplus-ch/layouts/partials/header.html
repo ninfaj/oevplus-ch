@@ -1,6 +1,7 @@
+{{- $currentUrl := .Permalink -}}
 <nav class="navbar is-primary">
     <div class="navbar-brand">
-        <a class="navbar-item" href="{{ .Site.BaseURL }}">
+        <a class="navbar-item" href="{{ print .Site.BaseURL  $.Site.Language  }}">
             {{ $logo := resources.Get "images/logo.svg" }}
           <img src="{{ print .Site.BaseURL $logo }}" alt="öv Plus">
         </a>
@@ -16,5 +17,32 @@
             {{ $active := and (eq $currentSite.Permalink .Permalink) "is-active" }}
             <a class="navbar-item {{$active}}" href="{{ .Permalink }}">{{ .Title }}</a>
         {{ end }}
+
+        <div class="navbar-item">|</div>
+        <ul class="has-text-weight-bold is-uppercase is-flex is-align-items-center">
+            {{ range .Site.Languages }}
+                {{ if eq . $.Site.Language }}
+                    <li class="is-inline pr-5">
+                        <a
+                            href="{{ $currentUrl }}"
+                            class="has-text-white"
+                            data-set-preferred-language="{{ . }}"
+                            >{{ .LanguageName }}</a
+                        >
+                    </li>
+                {{ else }}
+                    {{ range $.Translations }}
+                        <li class="is-inline pr-5">
+                            <a
+                                href="{{ .Permalink }}"
+                                class="has-text-grey-light"
+                                data-set-preferred-language="{{ .Language }}"
+                                >{{ .Language.LanguageName }}</a
+                            >
+                        </li>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        </ul>        
     </div>
 </nav>

@@ -1,6 +1,6 @@
 ---
 carousel:
-  - title: ÖV Plus App
+  - title: le ÖV Plus App
     text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
       wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
@@ -37,8 +37,9 @@ intro:
     feugait nulla facilisi.
   buttonLabel: Das ist ein Link
   buttonHref: https://google.com
-url: /
-title: Home
+url: /fr
+title: le Home
+seoTitle: le Home
 weight: 1
 type: home
 menu: main

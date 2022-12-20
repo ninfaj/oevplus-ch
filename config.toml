@@ -1,8 +1,21 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'ÖV Plus'
 
 theme = 'oevplus-ch'
+canonifyurls  = true
+DefaultContentLanguage = "de"
+
+[languages]
+  [languages.de]
+    languageName = "DE"
+    weight = 1
+
+  [languages.fr]
+    languageName = "FR"
+    weight = 2
 
 [markup.goldmark.renderer]
   unsafe = true
+
+
