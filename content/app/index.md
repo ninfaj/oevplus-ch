@@ -21,14 +21,12 @@ promo:
 video:
   title: Videos
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-  videos:
+  items:
     - 
       title: Eins
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
       video: /link/zum/video
     - 
       title: Zwei
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
       video: /link/zum/video
 faq:
   title: FAQ
