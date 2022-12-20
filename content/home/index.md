@@ -35,9 +35,9 @@ intro:
     **dolore eu feugiat** nulla facilisis at vero eros et accumsan et iusto odio
     dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
     feugait nulla facilisi.
-  introText: t﻿est
+  buttonLabel: Das ist ein Link
+  buttonHref: https://google.com
 url: /
-introButtonLabel: Das ist ein Link
 title: Home
 weight: 1
 type: home

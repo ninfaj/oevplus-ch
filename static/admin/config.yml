@@ -11,8 +11,18 @@ collections:
     create: false
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Intro", name: "intro", widget: "object", fields: [{label: "Text", name: "introText", widget: "markdown"}]}
-      - { label: "Content", name: "body", widget: "markdown"}
+      - {
+          label: "Intro",
+          name: "intro",
+          widget: "object",
+          fields:
+            [
+              { label: "Text", name: "text", widget: "markdown" },
+              { label: "Button Label", name: "buttonLabel", widget: "string" },
+              { label: "Button Link", name: "buttonHref", widget: "string" },
+            ],
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
 
   - name: "pages"
     label: "Pages" # Used in the UI
@@ -21,9 +31,15 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Summary", name: "summary", widget: "markdown"}
-      - { label: "Featured Image", name: "featuredImage", widget: "image", required: false, choose_url: false }
-      - { label: "Content", name: "body", widget: "markdown"}
+      - { label: "Summary", name: "summary", widget: "markdown" }
+      - {
+          label: "Featured Image",
+          name: "featuredImage",
+          widget: "image",
+          required: false,
+          choose_url: false,
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
   - name: "carousel"
     label: "Home - Carousel Item" # Used in the UI
     folder: "content/carousel" # The path to the folder where the documents are stored
@@ -32,7 +48,12 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Position", name: "weight", widget: "number" }
-      - { label: "Featured Image", name: "featuredImage", widget: "image", choose_url: false }
+      - {
+          label: "Featured Image",
+          name: "featuredImage",
+          widget: "image",
+          choose_url: false,
+        }
       - { label: "Button Link", name: "linkHref", widget: "string" }
       - { label: "Button Text", name: "linkLabel", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -44,7 +65,12 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Position", name: "weight", widget: "number" }
-      - { label: "Image", name: "featuredImage", widget: "image", choose_url: false }
+      - {
+          label: "Image",
+          name: "featuredImage",
+          widget: "image",
+          choose_url: false,
+        }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "videos"
     label: "APP - Videos" # Used in the UI
