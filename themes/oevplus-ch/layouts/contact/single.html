@@ -1,0 +1,49 @@
+<section class="light">
+    <div class="container">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Content }}</p>
+
+        <form class="my-4" action="" method="post">
+            <div class="field">
+                <label class="label" for="fullname">Name und Vorname</label>
+                <div class="control">
+                    <input class="input" type="text" name="fullname" id="fullname" required>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <div class="field">
+                        <label class="label" for="email">E-Mail Adresse</label>
+                        <div class="control">
+                            <input class="input" type="email" name="email" id="email" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="field">
+                        <label class="label" for="phone">Telefonnummer</label>
+                        <div class="control">
+                            <input class="input" type="tel" name="phone" id="phone">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="message" required>Nachricht</label>
+                <div class="control">
+                    <textarea class="textarea" name="message" id="message"></textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                  <button class="button is-link">Absenden</button>
+                </div>
+              </div>
+
+        </form>
+
+    </div>
+</section>

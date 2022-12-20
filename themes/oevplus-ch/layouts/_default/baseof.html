@@ -4,7 +4,7 @@
     <link rel="stylesheet" href='{{ (resources.Get "scss/app.scss" | resources.ToCSS | resources.Minify).Permalink }}' media="all">
     <body>
         {{- partial "header.html" . -}}
-        <main class="my-4 content">
+        <main class="content">
             {{- block "main" . }}{{- end }}
         </main>
         {{- partial "footer.html" . -}}

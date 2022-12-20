@@ -12,28 +12,49 @@ collections:
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
+      - { label: "Summary", name: "summary", widget: "markdown"}
+      - { label: "Featured Image", name: "featuredImage", widget: "image", required: false, choose_url: false }
       - { label: "Content", name: "body", widget: "markdown"}
+  - name: "carousel"
+    label: "Home - Carousel Item" # Used in the UI
+    folder: "content/carousel" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Position", name: "weight", widget: "number" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image", choose_url: false }
+      - { label: "Button Link", name: "linkHref", widget: "string" }
+      - { label: "Button Text", name: "linkLabel", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "tus"
+    label: "About - TUs" # Used in the UI
+    folder: "content/tus" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Position", name: "weight", widget: "number" }
+      - { label: "Image", name: "featuredImage", widget: "image", choose_url: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "videos"
+    label: "APP - Videos" # Used in the UI
+    folder: "content/app-videos" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Position", name: "weight", widget: "number" }
+      - { label: "Video", name: "video", widget: "file", choose_url: false }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "faq"
-    label: "FAQ" # Used in the UI
+    label: "App - FAQ" # Used in the UI
     folder: "content/faq" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     filter: { field: "editable", value: true }
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "editable", name: "editable", widget: "hidden", default: true }
-      - { label: "position", name: "weight", widget: "number" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "carousel"
-    label: "Carousel" # Used in the UI
-    folder: "content/carousel" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "position", name: "weight", widget: "number" }
-      - { label: "Featured Image", name: "featuredImage", widget: "image", required: true }
-      - { label: "Button Link", name: "linkHref", widget: "string" }
-      - { label: "Button Text", name: "linkLabel", widget: "string" }
+      - { label: "Editable", name: "editable", widget: "hidden", default: true }
+      - { label: "Position", name: "weight", widget: "number" }
       - { label: "Body", name: "body", widget: "markdown" }

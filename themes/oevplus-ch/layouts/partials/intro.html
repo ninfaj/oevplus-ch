@@ -1,0 +1,16 @@
+<section class="white">
+    <div class="container text-big">
+        <div class="columns is-justify-content-center is-align-items-center">
+            <div class="column">
+                <h1>{{ or .Params.seoTitle .Title }}</h1>
+                <p>{{ .Summary | markdownify }}</p>
+            </div>
+            {{ if .Params.featuredImage }}
+                <div class="column is-one-third">
+                    <img src="{{ .Params.featuredImage }}" />
+                </div>
+            {{ end }}
+        </div>
+
+    </div>
+</section>

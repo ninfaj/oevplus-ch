@@ -10,8 +10,10 @@ burger.addEventListener('click', function() {
 document.querySelectorAll(".splide").forEach(function(slider){
     var splide = new Splide("#" + slider.id, {
         type: "loop",
+        speed: 1000,
         autoplay: true,
-        interval: 5000
+        interval: 5000,
+        transition: "fade"
     });
     splide.mount();
 })

@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{- partial "scheduleBox.html" . -}}
+{{- partial "intro.html" . -}}
+<section class="blue">
+    <div class="container">
+        {{- partial "carousel.html" . -}}
+    </div>
+</section>
+{{- partial "content.html" . -}}
+{{ end }}

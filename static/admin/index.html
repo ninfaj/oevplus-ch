@@ -27,6 +27,20 @@
       },
     });
 
+    // blue
+    CMS.registerEditorComponent({
+      id: "blue",
+      label: "blue",
+      pattern: /{{< blue >(.*?)<\/ blue >}}/,
+
+      toBlock: function(obj) {
+          return `{{< blue >${obj}</ blue >}}`;
+      },
+      toPreview: function(obj) {
+          return `<div class="previewBox">{{< blue >}}</div>`;
+      },
+    });
+
   </script>
 
 </body>

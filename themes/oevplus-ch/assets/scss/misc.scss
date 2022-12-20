@@ -13,7 +13,6 @@
 
 // START splide slider
 .splide {
-    @extend .mb-4;
     figcaption {
       @extend .p-2;
       @extend .pb-0;
@@ -21,6 +20,9 @@
   }
   .splide li {
     margin: 0 !important;
+    &.splide__slide{
+        padding-right: 1px;
+    }
   }
   .splide__pagination {
     position: relative;
