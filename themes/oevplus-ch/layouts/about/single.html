@@ -3,6 +3,9 @@
 <section class="light">
     <div class="container">
         <center><h3 style="color:deeppink">TODO LOGOS TUs</h3></center>
+        {{ range .Params.tus }}
+            <h2>{{ .title }}</h2>
+        {{ end }}
     </div>
 </section>
 {{- partial "content.html" . -}}

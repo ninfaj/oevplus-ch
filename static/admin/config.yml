@@ -14,6 +14,7 @@ collections:
       - {
           label: "Intro",
           name: "intro",
+          collapsed: true,
           widget: "object",
           fields:
             [
@@ -21,6 +22,54 @@ collections:
               { label: "Button Label", name: "buttonLabel", widget: "string" },
               { label: "Button Link", name: "buttonHref", widget: "string" },
             ],
+        }
+      - {
+        label: "TUS",
+        name: "tus",
+        widget: "list",
+        collapsed: true,
+        summary: "{{fields.title}}",
+        fields:
+          [
+            {label: "Title", name: "title", widget: "string"},
+            {label: "Image", name: "image", widget: "image", chooseUrl: false},
+            {label: "url", name: "url", widget: "string"},
+          ],
+        }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  - name: "About"
+    label: "About"
+    folder: "content/about"
+    create: false
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Intro",
+          name: "intro",
+          collapsed: true,
+          widget: "object",
+          fields:
+            [
+              { label: "Text", name: "text", widget: "markdown" },
+              { label: "Button Label", name: "buttonLabel", widget: "string" },
+              { label: "Button Link", name: "buttonHref", widget: "string" },
+            ],
+        }
+      - {
+        label: "Carousel",
+        name: "carousel",
+        widget: "list",
+        collapsed: true,
+        summary: "{{fields.title}}",
+        fields:
+          [
+            {label: "Title", name: "title", widget: "string"},
+            {label: "Text", name: "text", widget: "markdown"},
+            {label: "Image", name: "image", widget: "image", chooseUrl: false},
+            {label: "LinkHref", name: "linkHref", widget: "string"},
+            {label: "LinkLabel", name: "linkLabel", widget: "string"},
+          ],
         }
       - { label: "Content", name: "body", widget: "markdown" }
 

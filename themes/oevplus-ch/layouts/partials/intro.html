@@ -1,33 +1,13 @@
-<!--
-    <section class="white">
-    <div class="container text-big">
-        <div class="columns is-justify-content-center is-align-items-center">
-            <div class="column">
-                <h1>{{ or .Params.seoTitle .Title }}</h1>
-                <p>{{ .Summary | markdownify }}</p>
-            </div>
-            {{ if .Params.featuredImage }}
-                <div class="column is-one-third">
-                    <img src="{{ .Params.featuredImage }}" />
-                </div>
-            {{ end }}
-        </div>
-
-    </div>
-</section>
--->
-
 <section class="white">
     <div class="container text-big">
         <div class="columns is-justify-content-center is-align-items-center">
             <div class="column">
                 <h1>{{ or .Params.seoTitle .Title }}</h1>
-                <p>{{ .Params.introText | markdownify }}</p>
-                {{- if .Params.introButtonHref -}}
-                    <a class="button is-primary" href="{{ .Params.introButtonHref }}">{{ or .Params.introButtonLabel .Params.introButtonHref }}</a>
+                <p>{{ .Params.intro.text | markdownify }}</p>
+                {{- if .Params.intro.buttonHref -}}
+                    <a class="button is-primary" href="{{ .Params.intro.buttonHref }}">{{ or .Params.intro.buttonLabel .Params.intro.buttonHref }}</a>
                 {{- end -}}
             </div>
         </div>
-
     </div>
 </section>
