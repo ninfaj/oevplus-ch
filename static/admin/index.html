@@ -31,13 +31,20 @@
     CMS.registerEditorComponent({
       id: "blue",
       label: "blue",
-      pattern: /{{< blue >(.*?)<\/ blue >}}/,
+      pattern: /{{< blue >}}(.*){{<\/ blue >}}/,
+      fields: [
+      {
+      label: 'body',
+      name: 'body',
+      widget: 'markdown'
+    },
+  ],
 
-      toBlock: function(obj) {
-          return `{{< blue >${obj}</ blue >}}`;
+      toBlock: function(body) {
+          return `{{< blue >}}${body.body}{{</ blue >}}`;
       },
-      toPreview: function(obj) {
-          return `<div class="previewBox">{{< blue >}}</div>`;
+      toPreview: function(body) {
+          return `<div class="previewBox">{{< blue >}}${body}</div>`;
       },
     });
 

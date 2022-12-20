@@ -1,4 +1,5 @@
-<section class="white">
+<!--
+    <section class="white">
     <div class="container text-big">
         <div class="columns is-justify-content-center is-align-items-center">
             <div class="column">
@@ -10,6 +11,22 @@
                     <img src="{{ .Params.featuredImage }}" />
                 </div>
             {{ end }}
+        </div>
+
+    </div>
+</section>
+-->
+
+<section class="white">
+    <div class="container text-big">
+        <div class="columns is-justify-content-center is-align-items-center">
+            <div class="column">
+                <h1>{{ or .Params.seoTitle .Title }}</h1>
+                <p>{{ .Params.introText | markdownify }}</p>
+                {{- if .Params.introButtonHref -}}
+                    <a class="button is-primary" href="{{ .Params.introButtonHref }}">{{ or .Params.introButtonLabel .Params.introButtonHref }}</a>
+                {{- end -}}
+            </div>
         </div>
 
     </div>
