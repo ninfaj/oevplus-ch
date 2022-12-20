@@ -163,12 +163,14 @@ collections:
           name: "labels",
           create: false,
           delete: false,
-          collapsed: false,
-          widget: "list",
-          summary: "{{fields.id}}",
+          collapsed: true,
+          widget: "object",
           fields:
             [
-              { label: "ID", name: "id", widget: "hidden" },
-              { label: "Title", name: "title", widget: "string" },
+              {label: "fullname", name: "fullname", widget: "string"},
+              {label: "mail", name: "mail", widget: "string"},
+              {label: "phone", name: "phone", widget: "string"},
+              {label: "message", name: "message", widget: "string"},
+              {label: "send", name: "send", widget: "string"},
             ],
         }
