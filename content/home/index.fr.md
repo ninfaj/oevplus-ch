@@ -1,33 +1,33 @@
 ---
 carousel:
-  - title: le ÖV Plus App
-    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+  - title: ÖV Plus App
+    text: Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
       wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
       lobortis nisl ut aliquip ex ea commodo consequat.
     image: /images/uploads/4b0ae928-b1d3-4896-8894-28788c0adac3_1_105_c.jpg
     linkHref: https://google.com
-    linkLabel: Link zu Google
+    linkLabel: Lien Google
   - title: Second Content
-    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    text: Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
       wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
       lobortis nisl ut aliquip ex ea commodo consequat.
     image: /images/uploads/4b0ae928-b1d3-4896-8894-28788c0adac3_1_105_c.jpg
     linkHref: https://google.com
-    linkLabel: Link zu Google
+    linkLabel: Lien Google
   - title: Third Content
-    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    text: Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
       wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
       lobortis nisl ut aliquip ex ea commodo consequat.
     image: /images/uploads/4b0ae928-b1d3-4896-8894-28788c0adac3_1_105_c.jpg
     linkHref: https://google.com
-    linkLabel: Link zu Google
+    linkLabel: Lien Google
 introButtonHref: https://google.com
 intro:
   text: >
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
     nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
     wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
     lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
@@ -35,43 +35,42 @@ intro:
     **dolore eu feugiat** nulla facilisis at vero eros et accumsan et iusto odio
     dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
     feugait nulla facilisi.
-  buttonLabel: Das ist ein Link
+  buttonLabel: Voila un lien
   buttonHref: https://google.com
 url: /fr
-title: le Home
-seoTitle: le Home
+title: Home
 weight: 1
 type: home
 menu: main
 ---
 
 ## Services
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 
 ### APP
-![ein Bild](https://via.placeholder.com/400x250 "ein Bild")
+![un image](https://via.placeholder.com/400x250 "un image")
 
-Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
+Françeais - Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
 
 [APP](#)
 
-### Abfahrtsmonitor
-![ein Bild](https://via.placeholder.com/400x250 "ein Bild")
+### Moniteur de départ
+![un image](https://via.placeholder.com/400x250 "un image")
 
-Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
+Françeais - Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
 
-[Abfahrtsmonitor](#)
+[Moniteur de départ](#)
 
-### Ereignismeldungen
-![ein Bild](https://via.placeholder.com/400x250 "ein Bild")
+### Messages d'événements
+![un image](https://via.placeholder.com/400x250 "un image")
 
-Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
+Françeais - Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
 
-[Ereignismeldungen](#)
+[Messages d'événements](#)
 
-### Fahrplan
-![ein Bild](https://via.placeholder.com/400x250 "ein Bild")
+### Horaire
+![un image](https://via.placeholder.com/400x250 "un image")
 
-Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
+Françeais - Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
 
-[Fahrplan](#)
+[Horaire](#)
