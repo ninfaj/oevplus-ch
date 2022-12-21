@@ -9,6 +9,7 @@ collections:
   - name: "Home"
     label: "Home"
     folder: "content/home"
+    summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
@@ -50,6 +51,7 @@ collections:
   - name: "About"
     label: "About"
     folder: "content/about"
+    summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
@@ -89,6 +91,7 @@ collections:
   - name: "App"
     label: "App"
     folder: "content/app"
+    summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
@@ -154,6 +157,7 @@ collections:
   - name: "Abfahrtsanzeige"
     label: "Abfahrtsanzeige"
     folder: "content/departures"
+    summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
@@ -175,6 +179,7 @@ collections:
   - name: "Ereignismeldungen"
     label: "Ereignismeldungen"
     folder: "content/incidents"
+    summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
@@ -196,6 +201,7 @@ collections:
   - name: "Fahrplan"
     label: "Fahrplan"
     folder: "content/schedule"
+    summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
@@ -217,6 +223,7 @@ collections:
   - name: "Contact"
     label: "Contact"
     folder: "content/contact"
+    summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
