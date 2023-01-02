@@ -34,12 +34,10 @@
         label: "icon",
         widget: "string",
         default: "fa-angle-down"
-      },{
-        name: "color",
-        label: "color",
-        widget: "string",
       }],
-      toBlock: createButton,
+      toBlock: function(obj) {
+        return `{{< button link="${obj.link}" label="${obj.label}" icon="${obj.icon}" >}}`;
+      },
       fromBlock: function (match) {
         return {
           link: match[1],
