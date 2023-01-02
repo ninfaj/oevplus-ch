@@ -54,13 +54,6 @@ Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorill
 
 [APP](#)
 
-<a href="#link-to-app">
-          APP
-          <span class="icon">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-        </a>
-
 ### Abfahrtsmonitor
 
 ![ein Bild](https://via.placeholder.com/400x250 "ein Bild")
