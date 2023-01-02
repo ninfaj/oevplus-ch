@@ -31,7 +31,7 @@ document.querySelectorAll("a[data-tab]").forEach(function(link){
 function showTab(tabid) {
   hideAllTabs();
   document.querySelector("[data-tab='" + tabid + "']").parentElement.classList.add("is-active");
-  document.querySelector("[data-tabid='" + tabid + "']").style.display = "block";
+  document.querySelector("[data-tabid='" + tabid + "']").classList.remove("is-hidden");
 }
 
 function hideAllTabs() {
@@ -39,6 +39,19 @@ function hideAllTabs() {
     tab.parentElement.classList.remove("is-active");
   });
   document.querySelectorAll("[data-tabid]").forEach(function(tabcontent){
-    tabcontent.style.display = "none";
+    tabcontent.classList.add("is-hidden");
   });
 }
+
+
+// faq
+document.querySelectorAll(".faq a.message-header").forEach(function(link){
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    var isActive = link.parentElement.classList.contains("is-active");
+    document.querySelectorAll(".faq article").forEach(function(faqItem){
+      faqItem.classList.remove("is-active");
+    });
+    if (!isActive) link.parentElement.classList.add("is-active");
+  })
+});

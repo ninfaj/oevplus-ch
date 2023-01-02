@@ -1,0 +1,35 @@
+.faq {
+  article {
+    background-color: transparent;
+    border-bottom: 1px solid $beige2;
+    border-radius: 0;
+    @extend .m-0;
+  }
+  .message-header {
+    @extend .has-text-primary;
+    @extend .p-0;
+    @extend .py-4;
+    background-color: transparent;
+    text-decoration: none !important;
+  }
+  .message-body {
+    @extend .p-0;
+    @extend .pb-4;
+    @extend .is-hidden;
+  }
+  .arrow {
+    transition: 0.5s transform ease;
+    @extend .mx-2;
+  }
+
+  .is-active {
+    @extend .mb-4;
+    .arrow {
+      transform: rotate(180deg);
+    }
+    .message-body {
+      @extend .is-block;
+    }
+  }
+
+}

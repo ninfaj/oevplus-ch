@@ -3,7 +3,7 @@
     <div class="navbar-brand">
         <a class="navbar-item" href="{{ print .Site.BaseURL  $.Site.Language  }}">
             {{ $logo := resources.Get "images/logo.svg" }}
-          <img src="{{ print .Site.BaseURL $logo }}" alt="öv Plus">
+            <img src="{{ print .Site.BaseURL $logo }}" alt="öv Plus">
         </a>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-nav">
             <span aria-hidden="true"></span>
@@ -14,35 +14,51 @@
     <div id="main-nav" class="navbar-end navbar-menu">
         {{ $currentSite := . }}
         {{ range where .Site.Pages ".Params.menu" "main" }}
-            {{ $active := and (eq $currentSite.Permalink .Permalink) "is-active" }}
-            <a class="navbar-item {{$active}}" href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ $active := and (eq $currentSite.Permalink .Permalink) "is-active" }}
+        <a class="navbar-item {{$active}}" href="{{ .Permalink }}">{{ .Title }}</a>
         {{ end }}
 
-        <div class="navbar-item">|</div>
-        <ul class="has-text-weight-bold is-uppercase is-flex is-align-items-center">
-            {{ range .Site.Languages }}
-                {{ if eq . $.Site.Language }}
-                    <li class="is-inline pr-5">
-                        <a
-                            href="{{ $currentUrl }}"
-                            class="has-text-white"
-                            data-set-preferred-language="{{ . }}"
-                            >{{ .LanguageName }}</a
-                        >
-                    </li>
-                {{ else }}
-                    {{ range $.Translations }}
-                        <li class="is-inline pr-5">
-                            <a
-                                href="{{ .Permalink }}"
-                                class="has-text-grey-light"
-                                data-set-preferred-language="{{ .Language }}"
-                                >{{ .Language.LanguageName }}</a
-                            >
+        <div class="navbar-item">
+            <hr class="is-hidden-desktop" />
+            <div class="is-hidden-desktop tabs is-toggle is-small">
+                <ul>
+                {{ range .Site.Languages }}
+                    {{ if eq . $.Site.Language }}
+                        <li class="is-active">
+                            <a href="{{ $currentUrl }}" data-set-preferred-language="{{ . }}">{{ .LanguageName }}</a>
                         </li>
+                    {{ else }}
+                        {{ range $.Translations }}
+                            <li>
+                                <a href="{{ .Permalink }}" data-set-preferred-language="{{ .Language }}">{{ .Language.LanguageName }}</a>
+                            </li>
+                        {{ end }}
                     {{ end }}
                 {{ end }}
-            {{ end }}
-        </ul>        
-    </div>
+                </ul>
+            </div>
+            <div class="dropdown is-right is-hidden-touch">
+                <div class="dropdown-trigger">
+                    <button class="button is-dark is-small" aria-haspopup="true" aria-controls="dropdown-menu3">
+                        <span>{{ $.Site.Language | upper }}</span>
+                        <span class="icon is-small">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                    {{ range .Site.Languages }}
+                        {{ if eq . $.Site.Language }}
+                            <a class="dropdown-item is-active" href="{{ $currentUrl }}" data-set-preferred-language="{{ . }}">{{ .LanguageName }}</a>
+                        {{ else }}
+                            {{ range $.Translations }}
+                                <a class="dropdown-item" href="{{ .Permalink }}" data-set-preferred-language="{{ .Language }}">{{ .Language.LanguageName }}</a>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
 </nav>

@@ -13,7 +13,9 @@
         <script src="{{ $splide.Permalink }}"></script>
         
         {{ $main := resources.Get "js/main.js" }}
-        {{ $js := slice $main | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint }}
+        {{ $dropdown := resources.Get "js/dropdown.js" }}
+        {{ $fontawesome := resources.Get "js/fontawesome.min.js" }}
+        {{ $js := slice $main $dropdown $fontawesome | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint }}
         <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
     </body>
 </html>
