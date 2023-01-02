@@ -52,25 +52,25 @@ Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
 
 Françeais - Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
 
-[APP](#)
+{{< button link="#link-to-APP" label="APP" icon="fa-arrow-right" >}}
 
 ### Moniteur de départ
 ![un image](https://via.placeholder.com/400x250 "un image")
 
 Françeais - Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
 
-[Moniteur de départ](#)
+{{< button link="#link-to-Moniteur-de-depart" label="Moniteur de départ" icon="fa-arrow-right" >}}
 
 ### Messages d'événements
 ![un image](https://via.placeholder.com/400x250 "un image")
 
 Françeais - Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
 
-[Messages d'événements](#)
+{{< button link="#link-to-Messages" label="Messages d'événements" icon="fa-arrow-right" >}}
 
 ### Horaire
 ![un image](https://via.placeholder.com/400x250 "un image")
 
 Françeais - Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
 
-[Horaire](#)
+{{< button link="#link-to-Horaire" label="Horaire" icon="fa-arrow-right" >}}
