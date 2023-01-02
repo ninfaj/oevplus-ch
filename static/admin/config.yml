@@ -126,7 +126,7 @@ collections:
                 fields:
                   [
                     { label: "Title", name: "title", widget: "string" },
-                    { label: "Video", name: "video", widget: "file", choose_url: false },
+                    { label: "Video", name: "video", widget: "file", choose_url: false, pattern: ['[a-z|_-]*\.mp4', "only mp4"] },
                   ],
               },
             ],
