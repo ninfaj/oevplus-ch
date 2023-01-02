@@ -27,9 +27,9 @@ video:
     - title: App einrichten
       video: /images/uploads/max-rolle.mp4
     - title: Ticket kaufen
-      video: /images/uploads/Auto AG Rothenburg.png
+      video: /images/uploads/path-to-video.mp4
     - title: Ereignisinformationen
-      video: /link/zum/video
+      video: /images/uploads/path-to-video.mp4
 faq:
   title: FAQ
   items:

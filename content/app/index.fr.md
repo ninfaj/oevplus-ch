@@ -24,13 +24,13 @@ video:
   items:
     - 
       title: Configurer l'application
-      video: /link/zum/video
+      video: /images/uploads/path-to-video.mp4
     - 
       title: Acheter un billet
-      video: /link/zum/video
+      video: /images/uploads/path-to-video.mp4
     - 
       title: Messages
-      video: /link/zum/video
+      video: /images/uploads/path-to-video.mp4
 faq:
   title: FAQ
   items:
