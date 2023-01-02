@@ -34,6 +34,10 @@
         label: "icon",
         widget: "string",
         default: "fa-angle-down"
+      },{
+        name: "color",
+        label: "color",
+        widget: "string",
       }],
       toBlock: createButton,
       fromBlock: function (match) {
@@ -47,7 +51,7 @@
     });
 
     function createButton(obj) {
-      return `<a href="${obj.link}">
+      return `<a href="${obj.link}" class="button is-primary">
           ${obj.label}
           <span class="icon">
             <i class="fas ${obj.icon}" aria-hidden="true"></i>
