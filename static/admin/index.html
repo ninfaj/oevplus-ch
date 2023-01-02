@@ -1,13 +1,15 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
 </head>
+
 <body>
   <!-- Include the script that builds the page and powers Netlify CMS -->
-  
+
   <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 
   <script>
@@ -16,39 +18,45 @@
 
     // FAQ
     CMS.registerEditorComponent({
-      id: "faq",
-      label: "FAQ",
-      pattern: /{{< faq >}}/,
-      toBlock: function(obj) {
-          return `{{< faq >}}`;
+      id: "button",
+      label: "Button",
+      pattern: /{{< button link="(.*)" label="(.*)" icon="(.*)" >}}/,
+      fields: [{
+        name: "link",
+        label: "link",
+        widget: "string"
+      },{
+        name: "label",
+        label: "label",
+        widget: "string"
+      },{
+        name: "icon",
+        label: "icon",
+        widget: "string",
+        default: "fa-angle-down"
+      }],
+      toBlock: createButton,
+      fromBlock: function (match) {
+        return {
+          link: match[1],
+          label: match[2],
+          icon: match[3],
+        };
       },
-      toPreview: function(obj) {
-          return `<div class="previewBox">{{< faq >}}</div>`;
-      },
+      toPreview: createButton
     });
 
-    // blue
-    CMS.registerEditorComponent({
-      id: "blue",
-      label: "blue",
-      pattern: /{{< blue >}}(.*){{<\/ blue >}}/,
-      fields: [
-      {
-      label: 'body',
-      name: 'body',
-      widget: 'markdown'
-    },
-  ],
-
-      toBlock: function(body) {
-          return `{{< blue >}}${body.body}{{</ blue >}}`;
-      },
-      toPreview: function(body) {
-          return `<div class="previewBox">{{< blue >}}${body}</div>`;
-      },
-    });
+    function createButton(obj) {
+      return `<a href="${obj.link}">
+          ${obj.label}
+          <span class="icon">
+            <i class="fas ${obj.icon}" aria-hidden="true"></i>
+          </span>
+        </a>`;
+    }
 
   </script>
 
 </body>
+
 </html>
