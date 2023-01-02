@@ -32,12 +32,12 @@
     </div>
     {{- range .Params.video.items -}}
       <div data-tabid="{{ .title | urlize }}">
-        <figure class="image is-16by9">
-          <video>
+        <figure class="image xis-16by9 m-0">
+          <video controls>
             <source src="{{ .video }}" type="video/mp4">
           </video>
+          <figcaption>{{ .title }}</figcaption>
         </figure>
-        {{ .title }}
       </div>
     {{- end -}}
 
@@ -48,7 +48,7 @@
   <div class="container">
     <h2>{{ .Params.faq.title }}</h2>
     {{- if .Params.faq.text -}}
-    <p>{{ .Params.faq.text | markdownify }}</p>
+      <p>{{ .Params.faq.text | markdownify }}</p>
     {{- end -}}
     {{- range .Params.faq.items -}}
     <article class="panel">
