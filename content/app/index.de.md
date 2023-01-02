@@ -39,7 +39,7 @@ faq:
     - title: Zwei
       text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-  text: L﻿orem
+  text: ""
 weight: 3
 type: app
 seoTitle: ÖV Plus App – einfach schneller ans Ziel.
