@@ -25,6 +25,7 @@ carousel:
     linkHref: https://google.com
     linkLabel: Link zu Google
 introButtonHref: https://google.com
+title: Home
 intro:
   text: >
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
@@ -37,23 +38,31 @@ intro:
     feugait nulla facilisi.
   buttonLabel: Das ist ein Link
   buttonHref: https://google.com
-title: Home
 weight: 1
 type: home
 menu: main
 ---
-
 ## Services
+
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 
 ### APP
+
 ![ein Bild](https://via.placeholder.com/400x250 "ein Bild")
 
 Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
 
 [APP](#)
 
+<a href="#link-to-app">
+          APP
+          <span class="icon">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </a>
+
 ### Abfahrtsmonitor
+
 ![ein Bild](https://via.placeholder.com/400x250 "ein Bild")
 
 Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
@@ -61,6 +70,7 @@ Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorill
 [Abfahrtsmonitor](#)
 
 ### Ereignismeldungen
+
 ![ein Bild](https://via.placeholder.com/400x250 "ein Bild")
 
 Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
@@ -68,6 +78,7 @@ Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorill
 [Ereignismeldungen](#)
 
 ### Fahrplan
+
 ![ein Bild](https://via.placeholder.com/400x250 "ein Bild")
 
 Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium. Sic tempus fugit esperanto hiccup estrogen. Glorious baklava ex librus hup hey ad infinitum.
