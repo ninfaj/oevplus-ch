@@ -14,8 +14,7 @@
                 <h2>{{ .title }}</h2>
                 <p>{{ .text | markdownify }}</p>
                 {{ if .linkHref }}
-                <a class="button is-white" href="{{ .linkHref }}">{{ or .linkLabel
-                  .linkHref }}</a>
+                <a class="button is-white" href="{{ .linkHref }}">{{ or .linkLabel .linkHref }}</a>
                 {{ end }}
               </div>
               {{ if .image }}
