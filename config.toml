@@ -1,5 +1,5 @@
-baseURL = 'https://oevplus.ninfaj.ch'
-languageCode = 'en-us'
+baseURL = 'https://oevplus.ninfaj.ch/'
+languageCode = 'de'
 title = 'ÖV Plus'
 
 theme = 'oevplus-ch'
