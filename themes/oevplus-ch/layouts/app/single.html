@@ -7,8 +7,7 @@
         <h2>{{ .Params.promo.title }}</h2>
         <p>{{ .Params.promo.text | markdownify }}</p>
         {{- if .Params.promo.buttonHref -}}
-        <a class="button is-light" href="{{ .Params.promo.buttonHref }}">{{ or .Params.promo.buttonLabel
-          .Params.promo.buttonHref }}</a>
+        <a class="button is-light" href="{{ .Params.promo.buttonHref }}">{{ or .Params.promo.buttonLabel .Params.promo.buttonHref }}</a>
         {{- end -}}
       </div>
     </div>
@@ -31,14 +30,14 @@
       </ul>
     </div>
     {{- range .Params.video.items -}}
-      <div data-tabid="{{ .title | urlize }}">
-        <figure class="image m-0">
-          <video controls>
-            <source src="{{ .video }}" type="video/mp4">
-          </video>
-          <figcaption>{{ .title }}</figcaption>
-        </figure>
-      </div>
+    <div data-tabid="{{ .title | urlize }}">
+      <figure class="image m-0">
+        <video controls>
+          <source src="{{ .video }}" type="video/mp4">
+        </video>
+        <figcaption>{{ .title }}</figcaption>
+      </figure>
+    </div>
     {{- end -}}
 
   </div>
@@ -48,7 +47,7 @@
   <div class="container faq">
     <h2>{{ .Params.faq.title }}</h2>
     {{- if .Params.faq.text -}}
-      <p>{{ .Params.faq.text | markdownify }}</p>
+    <p>{{ .Params.faq.text | markdownify }}</p>
     {{- end -}}
     {{- range .Params.faq.items -}}
     <article class="message">
@@ -56,7 +55,7 @@
         <span>{{ .title }}</span>
         <span class="icon is-small arrow">
           <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
+        </span>
       </a>
       <div class="message-body">
         <div>{{ .text | markdownify }}</div>
