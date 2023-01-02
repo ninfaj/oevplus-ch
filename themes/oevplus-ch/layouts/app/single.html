@@ -4,7 +4,7 @@
   <div class="container">
     <div class="columns is-justify-content-center is-align-items-center">
       <div class="column">
-        <h1>{{ .Params.promo.title }}</h1>
+        <h2>{{ .Params.promo.title }}</h2>
         <p>{{ .Params.promo.text | markdownify }}</p>
         {{- if .Params.promo.buttonHref -}}
         <a class="button is-light" href="{{ .Params.promo.buttonHref }}">{{ or .Params.promo.buttonLabel
@@ -21,16 +21,26 @@
     <h2>{{ .Params.video.title }}</h2>
     <p>{{ .Params.video.text | markdownify }}</p>
 
-    <div class="tabs is-toggle is-centered">
-      <ul>
+    <div class="tabs is-toggle is-centered is-fullwidth">
+      <ul class="m-0">
         {{- range .Params.video.items -}}
         <li>
-          <!-- is-active -->
-          <a><span>{{ .title }}</span></a>
+          <a data-tab="{{ .title | urlize }}"><span>{{ .title }}</span></a>
         </li>
         {{- end -}}
       </ul>
     </div>
+    {{- range .Params.video.items -}}
+      <div data-tabid="{{ .title | urlize }}">
+        <figure class="image is-16by9">
+          <video>
+            <source src="{{ .video }}" type="video/mp4">
+          </video>
+        </figure>
+        {{ .title }}
+      </div>
+    {{- end -}}
+
   </div>
 </section>
 

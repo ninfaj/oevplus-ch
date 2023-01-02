@@ -14,15 +14,16 @@ $primary: $cyan_dark;
 
 // Typo
 $link: $primary;
-$heading-family: "comic sans ms", sans-serif;
+$heading-family: "Courier New", sans-serif;
 $body-family: "open sans", sans-serif;
 $size-1: 100px;
-$size-2: 36px;
-$size-3: 30px;
-$size-4: 26px;
-$size-5: 18px;
-$size-6: 16px;
-$size-7: 13px;
+$size-2: 38px; // h1
+$size-3: 32px; // h2
+$size-4: 24px; // h3
+$size-5: 18px; // text-big
+$size-6: 16px; // text
+$size-7: 13px; // text-small
+$sizes: $size-1, $size-2, $size-3, $size-4, $size-5, $size-6, $size-7;
 
 // h1 36 regular 48 officina
 // h2 30 regular 38 officina

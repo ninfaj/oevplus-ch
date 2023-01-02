@@ -17,7 +17,44 @@ intro:
   buttonHref: https://google.com
 tus:
   -
-    title: bla
+    title: Auto AG Schwyz
+    image: "/images/uploads/Auto AG Schwyz.png"
+  -
+    title: Auto AG Uri
+    image: "/images/uploads/Auto AG Uri.png"
+  -
+    title: Automobil Rottal AG
+    image: "/images/uploads/Automobil Rottal AG.png"
+  -
+    title: bernmobil
+    image: "/images/uploads/bernmobil.png"
+  -
+    title: Engadin Bus
+    image: "/images/uploads/Engadin Bus.png"
+  -
+    title: Grindelwald Bus
+    image: "/images/uploads/Grindelwald Bus.png"
+  -
+    title: PostAuto Schweiz
+    image: "/images/uploads/PostAuto Schweiz.png"
+  -
+    title: Stadtbus Chur
+    image: "/images/uploads/Stadtbus Chur.png"
+  -
+    title: sti
+    image: "/images/uploads/sti.png"
+  -
+    title: vbl
+    image: "/images/uploads/vbl.png"
+  -
+    title: WETA
+    image: "/images/uploads/WETA.png"
+  -
+    title: Zentralbahn
+    image: "/images/uploads/Zentralbahn.png"
+  -
+    title: Zugerland Verkehrsbetriebe
+    image: "/images/uploads/Zugerland Verkehrsbetriebe.png"
 ---
 
 ## Unsere Ziele

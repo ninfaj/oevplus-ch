@@ -23,10 +23,13 @@ video:
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
   items:
     - 
-      title: Eins
+      title: App einrichten
       video: /link/zum/video
     - 
-      title: Zwei
+      title: Ticket kaufen
+      video: /link/zum/video
+    - 
+      title: Ereignisinformationen
       video: /link/zum/video
 faq:
   title: FAQ

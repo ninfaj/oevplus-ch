@@ -1,6 +1,6 @@
 ---
 title: APP
-seoTitle: ÖV Plus App – einfach schneller ans Ziel.
+seoTitle: ÖV Plus App – plus vite à destination.
 weight: 3
 menu: main
 type: app
@@ -23,10 +23,13 @@ video:
   text: Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
   items:
     - 
-      title: Un
+      title: Configurer l'application
       video: /link/zum/video
     - 
-      title: deux
+      title: Acheter un billet
+      video: /link/zum/video
+    - 
+      title: Messages
       video: /link/zum/video
 faq:
   title: FAQ
