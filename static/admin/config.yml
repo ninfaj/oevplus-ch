@@ -218,7 +218,7 @@ collections:
               { label: "Button Link", name: "buttonHref", widget: "string" },
             ],
         }
-      - { label: "Content", name: "body", widget: "markdown" }
+      - { label: "Content", name: "body", widget: "markdown", required: false }
       - {
           label: "Labels",
           name: "labels",
