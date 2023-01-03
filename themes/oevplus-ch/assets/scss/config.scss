@@ -12,6 +12,11 @@ $white: #fff;
 
 $primary: $cyan_dark;
 
+$custom-colors: (
+    "darkblue": ($darkblue, $white),
+    "cyan": ($cyan, $white),
+);
+
 // Typo
 $link: $primary;
 $heading-family: "open sans", sans-serif;

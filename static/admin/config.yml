@@ -219,6 +219,21 @@ collections:
             ],
         }
       - { label: "Content", name: "body", widget: "markdown" }
+      - {
+          label: "Labels",
+          name: "labels",
+          create: false,
+          delete: false,
+          collapsed: true,
+          widget: "object",
+          fields:
+            [
+              {label: "start", name: "start", widget: "string", default: "Von"},
+              {label: "end", name: "end", widget: "string", default: "Nach"},
+              {label: "search", name: "search", widget: "string", default: "Suchen"},
+              {label: "show_all", name: "show_all", widget: "string", default: "Alle Eingabefelder anzeigen"},
+            ],
+        }
 
   - name: "Contact"
     label: "Contact"
