@@ -228,10 +228,10 @@ collections:
           widget: "object",
           fields:
             [
-              {label: "start", name: "start", widget: "string", default: "Von"},
-              {label: "end", name: "end", widget: "string", default: "Nach"},
-              {label: "search", name: "search", widget: "string", default: "Suchen"},
-              {label: "show_all", name: "show_all", widget: "string", default: "Alle Eingabefelder anzeigen"},
+              {label: "start", name: "start", widget: "string"},
+              {label: "end", name: "end", widget: "string"},
+              {label: "search", name: "search", widget: "string"},
+              {label: "show_all", name: "show_all", widget: "string"},
             ],
         }
 
