@@ -2,8 +2,7 @@
 <nav class="navbar is-primary">
     <div class="navbar-brand">
         <a class="navbar-item" href="{{ print .Site.BaseURL  $.Site.Language  }}">
-            {{ $logo := resources.Get "images/logo.svg" }}
-            <img src="{{ print .Site.BaseURL $logo }}" alt="öv Plus">
+            <img src='{{ (resources.Get "images/logo.svg").Permalink }}' alt="öv Plus" />
         </a>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="main-nav">
             <span aria-hidden="true"></span>
