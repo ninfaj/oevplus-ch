@@ -16,6 +16,13 @@ intro:
   buttonLabel: Das ist ein Link
   buttonHref: https://google.com
 tus:
+
+  -
+    title: Aargau Verkehr
+    image: "/images/uploads/aargau_verkehr.png"
+  -
+    title: Auto AG Rothenburg
+    image: "/images/uploads/Auto AG Rothenburg.png"
   -
     title: Auto AG Schwyz
     image: "/images/uploads/Auto AG Schwyz.png"
