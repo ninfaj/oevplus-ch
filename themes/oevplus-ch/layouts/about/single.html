@@ -4,7 +4,11 @@
   <div>
     <div class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
       {{ range .Params.tus }}
-      <img src="{{ .image }}" alt="{{ .title }}" class="m-1" />
+      <div class="m-1">
+        <figure class="image is-square is-64x64 m-0">
+          <img src="{{ .image }}" alt="{{ .title }}"  />
+        </figure>
+      </div>
       {{ end }}
     </div>
   </div>

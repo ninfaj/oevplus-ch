@@ -9,19 +9,21 @@
         <ul class="splide__list">
           {{ range .Params.carousel }}
           <li class="splide__slide">
-            <div class="columns is-align-items-center">
-              <div class="column">
-                <h2>{{ .title }}</h2>
-                <p>{{ .text | markdownify }}</p>
-                {{ if .linkHref }}
-                <a class="button is-white" href="{{ .linkHref }}">{{ or .linkLabel .linkHref }}</a>
+            <div class="px-1">
+              <div class="columns is-align-items-center">
+                <div class="column">
+                  <h2>{{ .title }}</h2>
+                  <p>{{ .text | markdownify }}</p>
+                  {{ if .linkHref }}
+                  <a class="button is-white" href="{{ .linkHref }}">{{ or .linkLabel .linkHref }}</a>
+                  {{ end }}
+                </div>
+                {{ if .image }}
+                <div class="column is-one-third">
+                  <img src="{{ .image }}" />
+                </div>
                 {{ end }}
               </div>
-              {{ if .image }}
-              <div class="column is-one-third">
-                <img src="{{ .image }}" />
-              </div>
-              {{ end }}
             </div>
           </li>
           {{ end }}
