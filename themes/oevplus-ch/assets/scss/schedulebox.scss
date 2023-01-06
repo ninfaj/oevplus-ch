@@ -1,0 +1,37 @@
+.schedule-flex {
+    @extend .field;
+    @extend .is-flex;
+    @extend .is-flex-direction-row;
+    @extend .is-flex-wrap-wrap;
+    @extend .is-1;
+    @extend .has-text-centered;
+    .schedule-input,
+    .schedule-switch,
+    .schedule-search,
+    .schedule-showall {
+        @extend .m-1;
+    }
+
+    .schedule-input {
+        @extend .is-flex-grow-1;
+    }
+    .fields-mobile {
+        @extend .is-flex-grow-0;
+    }
+    .schedule-showall {
+        @extend .has-text-centered;
+        @extend .is-flex-grow-1;
+        width: 100%;
+    }
+}
+
+@include mobile {
+    .schedule-search {
+        width: 100%;
+    }
+    .schedule-search .button,
+    .schedule-showall .button {
+        width: 100%;
+    }
+
+}
