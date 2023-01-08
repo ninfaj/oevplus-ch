@@ -2,36 +2,42 @@
     @extend .field;
     @extend .is-flex;
     @extend .is-flex-direction-row;
-    @extend .is-flex-wrap-wrap;
     @extend .is-1;
     @extend .has-text-centered;
+    @extend .m-0;
+    @extend .mb-1;
     .schedule-input,
     .schedule-switch,
-    .schedule-search,
-    .schedule-showall {
+    .schedule-search {
         @extend .m-1;
+        flex-basis: auto;
     }
-
     .schedule-input {
         @extend .is-flex-grow-1;
     }
+
     .fields-mobile {
         @extend .is-flex-grow-0;
     }
     .schedule-showall {
         @extend .has-text-centered;
         @extend .is-flex-grow-1;
-        width: 100%;
+        flex-basis: 100%;
     }
 }
 
 @include mobile {
-    .schedule-search {
+    .schedule-flex {
+        flex-wrap: wrap;
+    }
+    .schedule-input {
+        flex-basis: 100%;
+    }
+    .schedule-search,
+    .schedule-search .button {
         width: 100%;
     }
-    .schedule-search .button,
-    .schedule-showall .button {
-        width: 100%;
+    .schedule-showall {
+        width: calc(100% - 0.5rem);
     }
-
 }
