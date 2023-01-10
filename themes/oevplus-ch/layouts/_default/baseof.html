@@ -11,6 +11,15 @@
     <title>{{ $seoTitle }}</title>
     <meta name="description" content="{{ .Summary }}" />
     <meta name="keywords" content="{{ .Params.seoKeywords }}" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href='{{ (resources.Get "images/apple-touch-icon.png").Permalink }}'>
+    <link rel="icon" type="image/png" sizes="32x32" href='{{ (resources.Get "images/favicon-32x32.png").Permalink }}'>
+    <link rel="icon" type="image/png" sizes="16x16" href='{{ (resources.Get "images/favicon-16x16.png").Permalink }}'>
+    <link rel="manifest" href='{{ (resources.Get "images/site.webmanifest").Permalink }}'>
+    <link rel="mask-icon" href='{{ (resources.Get "images/safari-pinned-tab.svg").Permalink }}' color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
     <body class="has-navbar-fixed-top">
         {{- partial "header.html" . -}}
         <main class="content">
