@@ -25,7 +25,9 @@
         <main class="content">
             {{- block "main" . }}{{- end }}
         </main>
-        {{- partial "footer.html" . -}}
+        <div class="content">
+            {{- partial "footer.html" . -}}
+        </div>
 
         {{ $splide := resources.Get "vendor/splide.min.js" }}
         <script src="{{ $splide.Permalink }}"></script>
