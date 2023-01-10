@@ -9,7 +9,7 @@
         {{ $seoTitle = .Params.seoTitle }}
     {{ end }}
     <title>{{ $seoTitle }}</title>
-    <meta name="description" content="{{ .Summary }}" />
+    <meta name="description" content="{{ .Summary | truncate 1000 }}" />
     <meta name="keywords" content="{{ .Params.seoKeywords }}" />
     
     <link rel="apple-touch-icon" sizes="180x180" href='{{ (resources.Get "images/apple-touch-icon.png").Permalink }}'>
@@ -18,7 +18,7 @@
     <link rel="manifest" href='{{ (resources.Get "images/site.webmanifest").Permalink }}'>
     <link rel="mask-icon" href='{{ (resources.Get "images/safari-pinned-tab.svg").Permalink }}' color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 
     <body class="has-navbar-fixed-top">
         {{- partial "header.html" . -}}
