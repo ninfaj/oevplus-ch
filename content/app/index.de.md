@@ -1,12 +1,16 @@
 ---
+advanced:
+  seoTitle: ÖV Plus App – einfach schneller ans Ziel.
+summary: Einfach schneller ans Ziel mit der öV Plus App! Lassen Sie sich zu
+  jedem beliebigen Zielort in der Schweiz Verbindungen anzeigen und lösen Sie
+  das passende Ticket. Die App kann nach den persönlichen Bedürfnissen
+  zusammengestellt werden.
+title: APP
 intro:
   text: >
     # ÖV Plus App – einfach schneller ans Ziel.
 
-    Einfach schneller ans Ziel mit der öV Plus App! Lassen Sie sich zu jedem
-    beliebigen Zielort in der Schweiz Verbindungen anzeigen und lösen Sie das
-    passende Ticket. Die App kann nach den persönlichen Bedürfnissen
-    zusammengestellt werden.
+    Einfach schneller ans Ziel mit der öV Plus App! Lassen Sie sich zu jedem beliebigen Zielort in der Schweiz Verbindungen anzeigen und lösen Sie das passende Ticket. Die App kann nach den persönlichen Bedürfnissen zusammengestellt werden.
   buttonLabel: Das ist ein Link
   buttonHref: https://google.com
 promo:
@@ -20,7 +24,45 @@ promo:
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat..
   buttonLabel: Das ist ein Link
   buttonHref: https://google.com
-title: APP
+faq:
+  title: FAQ
+  items:
+    - title: Welche Tickets kann ich mit der App kaufen?
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    - title: Kann ich mit der App gekaufte Ticket erstatten lassen?
+      text: Die Erstattung von Billetten, die in der App gekauft wurden, ist gemäss
+        Tarif T600.9 möglich. Erstattung vor Beginn der Gültigkeit. Bitte
+        kontaktieren Sie für Erstattungen die Verkaufsstellen der unten
+        aufgeführten Partner oder wenden Sie sich an
+        [info@oevplus.ch](mailto:info@oevplus.ch) mit den Angaben zu Ihrem
+        Ticketkauf.
+    - title: Kann ich bereits gekaufte Mobile-Tickets auch auf ein anderes Smartphone
+        übertragen?
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    - title: Welche Zahlungsmittel kann ich für den Kauf in der App verwenden?
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    - title: Mein Zahlungsmittel wurde nicht akzeptiert. Was kann ich tun?
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    - title: Gibt es die Möglichkeit, eine Quittung für mein eingekauftes
+        Mobile-Ticket zu generieren?
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    - title: Ich habe keine Quittung erhalten. Woran kann das liegen?
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    - title: Wie sicher sind meine Daten?
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    - title: An wen kann ich mich bei Fragen oder Problemen wenden?
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  text: ""
+weight: 3
+type: app
 video:
   title: Videos
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
@@ -32,31 +74,6 @@ video:
       video: /images/uploads/path-to-video.mp4
     - title: Ereignisinformationen
       video: /images/uploads/path-to-video.mp4
-faq:
-  title: FAQ
-  items:
-    - title: Welche Tickets kann ich mit der App kaufen?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Kann ich mit der App gekaufte Ticket erstatten lassen?
-      text: Die Erstattung von Billetten, die in der App gekauft wurden, ist gemäss Tarif T600.9 möglich. Erstattung vor Beginn der Gültigkeit. Bitte kontaktieren Sie für Erstattungen die Verkaufsstellen der unten aufgeführten Partner oder wenden Sie sich an [info@oevplus.ch](mailto:info@oevplus.ch) mit den Angaben zu Ihrem Ticketkauf. 
-    - title: Kann ich bereits gekaufte Mobile-Tickets auch auf ein anderes Smartphone übertragen?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Welche Zahlungsmittel kann ich für den Kauf in der App verwenden?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Mein Zahlungsmittel wurde nicht akzeptiert. Was kann ich tun?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Gibt es die Möglichkeit, eine Quittung für mein eingekauftes Mobile-Ticket zu generieren?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Ich habe keine Quittung erhalten. Woran kann das liegen?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Wie sicher sind meine Daten?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: An wen kann ich mich bei Fragen oder Problemen wenden?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-  text: ""
-weight: 3
-type: app
-summary: Einfach schneller ans Ziel mit der öV Plus App! Lassen Sie sich zu jedem beliebigen Zielort in der Schweiz Verbindungen anzeigen und lösen Sie das passende Ticket. Die App kann nach den persönlichen Bedürfnissen zusammengestellt werden.
 menu: main
 ---
 
