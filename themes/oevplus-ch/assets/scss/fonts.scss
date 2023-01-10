@@ -53,3 +53,19 @@
     font-weight: 700;
     src: local('Open Sans'), url(/fonts/OpenSans/OpenSans-BoldItalic.woff) format('woff')
 }
+
+
+
+@font-face {
+    font-family: ITC Officina Sans Std;
+    src: url('/fonts/officina/itc-officina-sans-std-book.otf') format('opentype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: ITC Officina Sans Std;
+    font-weight: 700;
+    src: url('/fonts/officina/itc-officina-sans-std-bold.otf') format('opentype');
+    font-display: swap;
+}
+ 
