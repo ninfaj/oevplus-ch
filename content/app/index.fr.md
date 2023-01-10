@@ -1,9 +1,11 @@
 ---
+advanced:
+  seoTitle: ÖV Plus App – plus vite à destination.
+summary: Arrivez tout simplement plus vite à destination avec l’app TP Plus !
+  Affichez les correspondances vers n’importe quelle destination en Suisse et
+  achetez le billet adéquat. L’app peut être composée selon les besoins
+  personnels.
 title: APP
-summary: Arrivez tout simplement plus vite à destination avec l’app TP Plus ! Affichez les correspondances vers n’importe quelle destination en Suisse et achetez le billet adéquat. L’app peut être composée selon les besoins personnels.
-weight: 3
-menu: main
-type: app
 intro:
   text: >
     # ÖV Plus App – plus vite à destination.
@@ -14,46 +16,66 @@ intro:
 promo:
   title: Accessibilité - une application pour tous
   text: >
-    Ici, on pourrait par exemple mettre en avant l'accessibilité ou décrire une autre caractéristique importante de l'application. On peut éventuellement y mettre un lien (access4all, article dans un magazine ou autre).
-    
-    
+    Ici, on pourrait par exemple mettre en avant l'accessibilité ou décrire une
+    autre caractéristique importante de l'application. On peut éventuellement y
+    mettre un lien (access4all, article dans un magazine ou autre).
+
+
     Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat..
   buttonLabel: Voila un lien
   buttonHref: https://google.com
-video:
-  title: Vidéos
-  text: Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-  items:
-    - 
-      title: Configurer l'application
-      video: /images/uploads/path-to-video.mp4
-    - 
-      title: Acheter un billet
-      video: /images/uploads/path-to-video.mp4
-    - 
-      title: Messages
-      video: /images/uploads/path-to-video.mp4
 faq:
   title: FAQ
   items:
     - title: Quels billets puis-je acheter avec l'application ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
     - title: Puis-je me faire rembourser les billets achetés avec l'application ?
-      text: Le remboursement des billets achetés dans l'app est possible selon le tarif T600.9. Remboursement avant le début de la validité. Pour les remboursements, veuillez contacter les points de vente des partenaires mentionnés ci-dessous ou vous adresser à [info@oevplus.ch](mailto:info@oevplus.ch) avec les détails de votre achat de billets. 
-    - title: Puis-je transférer des billets pour mobile déjà achetés sur un autre smartphone ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Quels moyens de paiement puis-je utiliser pour acheter dans l'application ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      text: Le remboursement des billets achetés dans l'app est possible selon le
+        tarif T600.9. Remboursement avant le début de la validité. Pour les
+        remboursements, veuillez contacter les points de vente des partenaires
+        mentionnés ci-dessous ou vous adresser à
+        [info@oevplus.ch](mailto:info@oevplus.ch) avec les détails de votre
+        achat de billets.
+    - title: Puis-je transférer des billets pour mobile déjà achetés sur un autre
+        smartphone ?
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    - title: Quels moyens de paiement puis-je utiliser pour acheter dans l'application
+        ?
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
     - title: Mon moyen de paiement n'a pas été accepté. Que puis-je faire ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Est-il possible de générer un reçu pour le ticket mobile que j'ai acheté ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    - title: Est-il possible de générer un reçu pour le ticket mobile que j'ai acheté
+        ?
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
     - title: Je n'ai pas reçu de reçu. À quoi cela peut-il être dû ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
     - title: Dans quelle mesure mes données sont-elles en sécurité ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
     - title: À qui puis-je m'adresser en cas de questions ou de problèmes ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+weight: 3
+type: app
+video:
+  title: Vidéos
+  text: Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+    volutpat.
+  items:
+    - title: Configurer l'application
+      video: /images/uploads/path-to-video.mp4
+    - title: Acheter un billet
+      video: /images/uploads/path-to-video.mp4
+    - title: Messages
+      video: /images/uploads/path-to-video.mp4
+menu: main
 ---
 
 ## Fonctions
