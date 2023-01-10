@@ -24,6 +24,7 @@ faq:
     - title: Welche Tickets kann ich mit der App kaufen?
       text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        :-)
     - title: Kann ich mit der App gekaufte Ticket erstatten lassen?
       text: Die Erstattung von Billetten, die in der App gekauft wurden, ist gemäss
         Tarif T600.9 möglich. Erstattung vor Beginn der Gültigkeit. Bitte
