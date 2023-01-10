@@ -1,10 +1,6 @@
 ---
 "":
   seoTitle: seotitle
-summary: Arrivez tout simplement plus vite à destination avec l’app TP Plus !
-  Affichez les correspondances vers n’importe quelle destination en Suisse et
-  achetez le billet adéquat. L’app peut être composée selon les besoins
-  personnels.
 title: APP
 intro:
   text: >
@@ -13,17 +9,18 @@ intro:
     Arrivez tout simplement plus vite à destination avec l'app TP Plus ! Affichez les correspondances vers n'importe quelle destination en Suisse et achetez le billet adéquat. L'app peut être composée selon les besoins personnels.
   buttonLabel: Voila un lien
   buttonHref: https://google.com
-promo:
-  title: Accessibilité - une application pour tous
-  text: >
-    Ici, on pourrait par exemple mettre en avant l'accessibilité ou décrire une
-    autre caractéristique importante de l'application. On peut éventuellement y
-    mettre un lien (access4all, article dans un magazine ou autre).
-
-
-    Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat..
-  buttonLabel: Voila un lien
-  buttonHref: https://google.com
+video:
+  title: Vidéos
+  text: Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+    volutpat.
+  items:
+    - title: Configurer l'application
+      video: /images/uploads/path-to-video.mp4
+    - title: Acheter un billet
+      video: /images/uploads/path-to-video.mp4
+    - title: Messages
+      video: /images/uploads/path-to-video.mp4
 faq:
   title: FAQ
   items:
@@ -61,21 +58,25 @@ faq:
     - title: À qui puis-je m'adresser en cas de questions ou de problèmes ?
       text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+seoTitle: ÖV Plus App – plus vite à destination.
+summary: Arrivez tout simplement plus vite à destination avec l’app TP Plus !
+  Affichez les correspondances vers n’importe quelle destination en Suisse et
+  achetez le billet adéquat. L’app peut être composée selon les besoins
+  personnels.
+seoKeywords: APP
+promo:
+  title: Accessibilité - une application pour tous
+  text: >
+    Ici, on pourrait par exemple mettre en avant l'accessibilité ou décrire une
+    autre caractéristique importante de l'application. On peut éventuellement y
+    mettre un lien (access4all, article dans un magazine ou autre).
+
+
+    Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat..
+  buttonLabel: Voila un lien
+  buttonHref: https://google.com
 weight: 3
 type: app
-video:
-  title: Vidéos
-  text: Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-    volutpat.
-  items:
-    - title: Configurer l'application
-      video: /images/uploads/path-to-video.mp4
-    - title: Acheter un billet
-      video: /images/uploads/path-to-video.mp4
-    - title: Messages
-      video: /images/uploads/path-to-video.mp4
-seoTitle: ÖV Plus App – plus vite à destination.
 menu: main
 ---
 
