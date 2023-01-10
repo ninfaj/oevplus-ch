@@ -1,5 +1,6 @@
 ---
-seoTitle: ÖV Plus App – plus vite à destination.
+"":
+  seoTitle: seotitle
 summary: Arrivez tout simplement plus vite à destination avec l’app TP Plus !
   Affichez les correspondances vers n’importe quelle destination en Suisse et
   achetez le billet adéquat. L’app peut être composée selon les besoins
@@ -74,6 +75,7 @@ video:
       video: /images/uploads/path-to-video.mp4
     - title: Messages
       video: /images/uploads/path-to-video.mp4
+seoTitle: ÖV Plus App – plus vite à destination.
 menu: main
 ---
 
