@@ -48,18 +48,22 @@ collections:
         }
       - { label: "Content", name: "body", widget: "markdown" }
       - {
-          label: "Advanced",
-          name: "advanced",
-          create: false,
-          delete: false,
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              {label: "SEO Title", name: "seoTitle", widget: "string", required: false},
-              {label: "SEO Description", name: "summary", widget: "text", required: false},
-              {label: "SEO Keywords", name: "seoKeywords", widget: "string", required: false},
-            ],
+        label: "SEO Title",
+        name: "seoTitle",
+        widget: "string",
+        required: false
+        }
+      - {
+        label: "SEO Description",
+        name: "summary",
+        widget: "text",
+        required: false
+        }
+      - {
+        label: "SEO Keywords",
+        name: "seoKeywords",
+        widget: "string",
+        required: false
         }
 
   - name: "About"
@@ -102,18 +106,22 @@ collections:
         }
       - { label: "Content", name: "body", widget: "markdown" }
       - {
-          label: "Advanced",
-          name: "advanced",
-          create: false,
-          delete: false,
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              {label: "SEO Title", name: "seoTitle", widget: "string", required: false},
-              {label: "SEO Description", name: "summary", widget: "text", required: false},
-              {label: "SEO Keywords", name: "seoKeywords", widget: "string", required: false},
-            ],
+        label: "SEO Title",
+        name: "seoTitle",
+        widget: "string",
+        required: false
+        }
+      - {
+        label: "SEO Description",
+        name: "summary",
+        widget: "text",
+        required: false
+        }
+      - {
+        label: "SEO Keywords",
+        name: "seoKeywords",
+        widget: "string",
+        required: false
         }
 
   - name: "App"
@@ -182,17 +190,22 @@ collections:
             ],
         }
       - {
-          label: "Advanced",
-          create: false,
-          delete: false,
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              {label: "SEO Title", name: "seoTitle", widget: "string", required: false},
-              {label: "SEO Description", name: "summary", widget: "text", required: false},
-              {label: "SEO Keywords", name: "seoKeywords", widget: "string", required: false},
-            ],
+        label: "SEO Title",
+        name: "seoTitle",
+        widget: "string",
+        required: false
+        }
+      - {
+        label: "SEO Description",
+        name: "summary",
+        widget: "text",
+        required: false
+        }
+      - {
+        label: "SEO Keywords",
+        name: "seoKeywords",
+        widget: "string",
+        required: false
         }
 
   - name: "Abfahrtsanzeige"
@@ -217,18 +230,22 @@ collections:
         }
       - { label: "Content", name: "body", widget: "markdown" }
       - {
-          label: "Advanced",
-          name: "advanced",
-          create: false,
-          delete: false,
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              {label: "SEO Title", name: "seoTitle", widget: "string", required: false},
-              {label: "SEO Description", name: "summary", widget: "text", required: false},
-              {label: "SEO Keywords", name: "seoKeywords", widget: "string", required: false},
-            ],
+        label: "SEO Title",
+        name: "seoTitle",
+        widget: "string",
+        required: false
+        }
+      - {
+        label: "SEO Description",
+        name: "summary",
+        widget: "text",
+        required: false
+        }
+      - {
+        label: "SEO Keywords",
+        name: "seoKeywords",
+        widget: "string",
+        required: false
         }
 
   - name: "Ereignismeldungen"
@@ -253,18 +270,22 @@ collections:
         }
       - { label: "Content", name: "body", widget: "markdown" }
       - {
-          label: "Advanced",
-          name: "advanced",
-          create: false,
-          delete: false,
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              {label: "SEO Title", name: "seoTitle", widget: "string", required: false},
-              {label: "SEO Description", name: "summary", widget: "text", required: false},
-              {label: "SEO Keywords", name: "seoKeywords", widget: "string", required: false},
-            ],
+        label: "SEO Title",
+        name: "seoTitle",
+        widget: "string",
+        required: false
+        }
+      - {
+        label: "SEO Description",
+        name: "summary",
+        widget: "text",
+        required: false
+        }
+      - {
+        label: "SEO Keywords",
+        name: "seoKeywords",
+        widget: "string",
+        required: false
         }
 
   - name: "Fahrplan"
@@ -304,18 +325,22 @@ collections:
             ],
         }
       - {
-          label: "Advanced",
-          name: "advanced",
-          create: false,
-          delete: false,
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              {label: "SEO Title", name: "seoTitle", widget: "string", required: false},
-              {label: "SEO Description", name: "summary", widget: "text", required: false},
-              {label: "SEO Keywords", name: "seoKeywords", widget: "string", required: false},
-            ],
+        label: "SEO Title",
+        name: "seoTitle",
+        widget: "string",
+        required: false
+        }
+      - {
+        label: "SEO Description",
+        name: "summary",
+        widget: "text",
+        required: false
+        }
+      - {
+        label: "SEO Keywords",
+        name: "seoKeywords",
+        widget: "string",
+        required: false
         }
 
   - name: "Contact"
