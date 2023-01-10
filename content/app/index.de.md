@@ -1,9 +1,4 @@
 ---
-seoTitle: ÖV Plus App – einfach schneller ans Ziel.
-summary: Einfach schneller ans Ziel mit der öV Plus App! Lassen Sie sich zu
-  jedem beliebigen Zielort in der Schweiz Verbindungen anzeigen und lösen Sie
-  das passende Ticket. Die App kann nach den persönlichen Bedürfnissen
-  zusammengestellt werden.
 title: APP
 intro:
   text: >
@@ -12,17 +7,17 @@ intro:
     Einfach schneller ans Ziel mit der öV Plus App! Lassen Sie sich zu jedem beliebigen Zielort in der Schweiz Verbindungen anzeigen und lösen Sie das passende Ticket. Die App kann nach den persönlichen Bedürfnissen zusammengestellt werden.
   buttonLabel: Das ist ein Link
   buttonHref: https://google.com
-promo:
-  title: Barrierefreiheit – eine App für alle
-  text: >
-    Hier könnte man z.B. die Barrierefreiheit hervorheben, bzw. sonst eine
-    wichtige Eigenschaft der App beschreiben. Evtl. kann man hier auch etwas
-    verlinken (access4all, Artikel in Zeitschrift, oder Ähnliches.
-
-
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat..
-  buttonLabel: Das ist ein Link
-  buttonHref: https://google.com
+video:
+  title: Videos
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  items:
+    - title: App einrichten
+      video: /images/uploads/max-rolle.mp4
+    - title: Ticket kaufen
+      video: /images/uploads/path-to-video.mp4
+    - title: Ereignisinformationen
+      video: /images/uploads/path-to-video.mp4
 faq:
   title: FAQ
   items:
@@ -60,19 +55,25 @@ faq:
       text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
   text: ""
+seoTitle: ÖV Plus App – einfach schneller ans Ziel.
+summary: Einfach schneller ans Ziel mit der öV Plus App! Lassen Sie sich zu
+  jedem beliebigen Zielort in der Schweiz Verbindungen anzeigen und lösen Sie
+  das passende Ticket. Die App kann nach den persönlichen Bedürfnissen
+  zusammengestellt werden.
+seoKeywords: APP Mobile schneller ans Ziel
+promo:
+  title: Barrierefreiheit – eine App für alle
+  text: >
+    Hier könnte man z.B. die Barrierefreiheit hervorheben, bzw. sonst eine
+    wichtige Eigenschaft der App beschreiben. Evtl. kann man hier auch etwas
+    verlinken (access4all, Artikel in Zeitschrift, oder Ähnliches.
+
+
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat..
+  buttonLabel: Das ist ein Link
+  buttonHref: https://google.com
 weight: 3
 type: app
-video:
-  title: Videos
-  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-  items:
-    - title: App einrichten
-      video: /images/uploads/max-rolle.mp4
-    - title: Ticket kaufen
-      video: /images/uploads/path-to-video.mp4
-    - title: Ereignisinformationen
-      video: /images/uploads/path-to-video.mp4
 menu: main
 ---
 
