@@ -28,3 +28,7 @@ h3 {
 .text-small {
     @extend .is-size-7;
 }
+
+p:empty {
+    @extend .m-0;
+}

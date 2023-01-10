@@ -5,6 +5,8 @@ menu: main
 type: about
 intro:
   text: >
+    # Sur nous
+
     Le intro text en françeais
   buttonLabel: Voila un lien
   buttonHref: https://google.com

@@ -14,7 +14,7 @@
         {{ $currentSite := . }}
         {{ range where .Site.Pages ".Params.menu" "main" }}
         {{ $active := and (eq $currentSite.Permalink .Permalink) "is-active" }}
-        <a class="navbar-item {{$active}}" href="{{ .Permalink }}">{{ .Title }}</a>
+        <a class="navbar-item {{$active}}" href="{{ .Permalink }}">{{ .Name }}</a>
         {{ end }}
 
         <div class="navbar-item">

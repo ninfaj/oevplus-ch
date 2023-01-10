@@ -47,6 +47,21 @@ collections:
             ],
         }
       - { label: "Content", name: "body", widget: "markdown" }
+      - {
+          label: "Advanced",
+          name: "advanced",
+          create: false,
+          delete: false,
+          collapsed: true,
+          widget: "object",
+          fields:
+            [
+              {label: "Title in Navigation", name: "linkTitle", widget: "string"},
+              {label: "SEO Title", name: "seoTitle", widget: "string"},
+              {label: "SEO Description", name: "summary", widget: "text"},
+              {label: "SEO Keywords", name: "seoKeywords", widget: "string"},
+            ],
+        }
 
   - name: "About"
     label: "About"
@@ -87,6 +102,21 @@ collections:
             ],
         }
       - { label: "Content", name: "body", widget: "markdown" }
+      - {
+          label: "Advanced",
+          name: "advanced",
+          create: false,
+          delete: false,
+          collapsed: true,
+          widget: "object",
+          fields:
+            [
+              {label: "Title in Navigation", name: "linkTitle", widget: "string"},
+              {label: "SEO Title", name: "seoTitle", widget: "string"},
+              {label: "SEO Description", name: "summary", widget: "text"},
+              {label: "SEO Keywords", name: "seoKeywords", widget: "string"},
+            ],
+        }
 
   - name: "App"
     label: "App"
@@ -153,6 +183,21 @@ collections:
               },
             ],
         }
+      - {
+          label: "Advanced",
+          name: "advanced",
+          create: false,
+          delete: false,
+          collapsed: true,
+          widget: "object",
+          fields:
+            [
+              {label: "Title in Navigation", name: "linkTitle", widget: "string"},
+              {label: "SEO Title", name: "seoTitle", widget: "string"},
+              {label: "SEO Description", name: "summary", widget: "text"},
+              {label: "SEO Keywords", name: "seoKeywords", widget: "string"},
+            ],
+        }
 
   - name: "Abfahrtsanzeige"
     label: "Abfahrtsanzeige"
@@ -175,6 +220,21 @@ collections:
             ],
         }
       - { label: "Content", name: "body", widget: "markdown" }
+      - {
+          label: "Advanced",
+          name: "advanced",
+          create: false,
+          delete: false,
+          collapsed: true,
+          widget: "object",
+          fields:
+            [
+              {label: "Title in Navigation", name: "linkTitle", widget: "string"},
+              {label: "SEO Title", name: "seoTitle", widget: "string"},
+              {label: "SEO Description", name: "summary", widget: "text"},
+              {label: "SEO Keywords", name: "seoKeywords", widget: "string"},
+            ],
+        }
 
   - name: "Ereignismeldungen"
     label: "Ereignismeldungen"
@@ -197,6 +257,21 @@ collections:
             ],
         }
       - { label: "Content", name: "body", widget: "markdown" }
+      - {
+          label: "Advanced",
+          name: "advanced",
+          create: false,
+          delete: false,
+          collapsed: true,
+          widget: "object",
+          fields:
+            [
+              {label: "Title in Navigation", name: "linkTitle", widget: "string"},
+              {label: "SEO Title", name: "seoTitle", widget: "string"},
+              {label: "SEO Description", name: "summary", widget: "text"},
+              {label: "SEO Keywords", name: "seoKeywords", widget: "string"},
+            ],
+        }
 
   - name: "Fahrplan"
     label: "Fahrplan"
@@ -232,6 +307,21 @@ collections:
               {label: "Bis", name: "end", widget: "string"},
               {label: "Suchen", name: "search", widget: "string"},
               {label: "Alle Eingabefelder anzeigen", name: "show_all", widget: "string"},
+            ],
+        }
+      - {
+          label: "Advanced",
+          name: "advanced",
+          create: false,
+          delete: false,
+          collapsed: true,
+          widget: "object",
+          fields:
+            [
+              {label: "Title in Navigation", name: "linkTitle", widget: "string"},
+              {label: "SEO Title", name: "seoTitle", widget: "string"},
+              {label: "SEO Description", name: "summary", widget: "text"},
+              {label: "SEO Keywords", name: "seoKeywords", widget: "string"},
             ],
         }
 
