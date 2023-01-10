@@ -1,7 +1,7 @@
 // clean up empty paragraphs
 document.querySelectorAll("p").forEach(function (paragraph) { 
   if (!paragraph.innerHTML) paragraph.remove();
-})
+});
 
 // Get all "navbar-burger" elements
 var burger = document.querySelector('.navbar-burger');
