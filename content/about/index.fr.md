@@ -8,8 +8,10 @@ intro:
     # Sur nous
 
     Le intro text en françeais
-  buttonLabel: Voila un lien
-  buttonHref: https://google.com
+
+    ## Nous partnours
+
+    Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 tus:
 tus:
   -

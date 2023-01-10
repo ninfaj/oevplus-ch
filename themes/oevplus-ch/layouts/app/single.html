@@ -1,5 +1,28 @@
 {{ define "main" }}
-{{- partial "intro.html" . -}}
+
+<section class="white appIntro">
+  <div class="container text-big">
+      <div class="columns is-align-items-center">
+          <div class="column is-two-thirds">
+              <p>{{ .Params.intro.text | markdownify }}</p>
+              <div class="is-flex">
+                {{- if .Params.intro.appLinkIOS -}}
+                  <a href="{{ .Params.intro.appLinkIOS }}" target="_blank">
+                    <img src='{{ (resources.Get "images/app-store.png").Permalink }}' alt="iOS App Store" />
+                  </a>
+                {{- end -}}
+                <div class="mx-1">&nbsp;</div>
+                {{- if .Params.intro.appLinkAndroid -}}
+                  <a href="{{ .Params.intro.appLinkAndroid }}" target="_blank">
+                    <img src='{{ (resources.Get "images/google-play.png").Permalink }}' alt="Google Play Store" />
+                  </a>
+                {{- end -}}
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+
 <section class="blue">
   <div class="container">
     <div class="columns is-justify-content-center is-align-items-center">

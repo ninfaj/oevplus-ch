@@ -4,6 +4,12 @@ h3 {
     font-family: $heading-family;
     @extend .pt-1;
 }
+body .content {
+    h1,h2,h3 {
+        color: $darkblue;
+        font-weight: normal;
+    }
+}
 
 h1 {
     @extend .is-size-2;

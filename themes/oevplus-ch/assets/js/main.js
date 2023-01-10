@@ -15,6 +15,7 @@ burger.addEventListener('click', function () {
 document.querySelectorAll(".splide").forEach(function (slider) {
   var splide = new Splide("#" + slider.id, {
     type: "loop",
+    arrows: false,
     speed: 1000,
     autoplay: true,
     interval: 5000,

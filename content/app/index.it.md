@@ -7,6 +7,8 @@ intro:
     Einfach schneller ans Ziel mit der öV Plus App! Lassen Sie sich zu jedem beliebigen Zielort in der Schweiz Verbindungen anzeigen und lösen Sie das passende Ticket. Die App kann nach den persönlichen Bedürfnissen zusammengestellt werden.
   buttonLabel: Das ist ein Link
   buttonHref: https://google.com
+  appLinkAndroid: https://play.google.com/store/apps/details?id=ch.glue.android.mezi
+  appLinkIOS: https://itunes.apple.com/ch/app/%C3%B6v-plus/id342335298?mt=8
 video:
   title: Videos
   text:  IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy

@@ -13,26 +13,46 @@
 
 // START splide slider
 .splide {
-    figcaption {
-      @extend .p-2;
-      @extend .pb-0;
-    }
+  figcaption {
+    @extend .p-2;
+    @extend .pb-0;
   }
-  .splide li {
-    margin: 0 !important;
-    &.splide__slide{
-        padding-right: 1px;
-    }
+}
+.splide li {
+  margin: 0 !important;
+  &.splide__slide {
+      padding-right: 1px;
   }
-  .splide__pagination {
-    position: relative;
-    padding: 0;
+}
+.splide__pagination {
+  position: relative;
+  padding: 0;
 }
 .splide__pagination__page {
-    background: $beige3;
-    opacity: 1;
-    &.is-active {
-      background-color: $yellow;
-    }
+  background: $beige3;
+  opacity: 1;
+  &.is-active {
+    background-color: $yellow;
   }
-  // END splide slider
+}
+
+// END splide slider
+
+// APP intro
+.appIntro {
+  background: url(../images/app-intro-bg.png) no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+@include touch {
+  .appIntro {
+    background-position-x: calc(100vw - 60%);
+  }
+}
+@include mobile {
+  .appIntro {
+    background-position-x: calc(100vw - 50%);
+    // background-image: none;
+  }
+}

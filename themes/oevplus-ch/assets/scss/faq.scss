@@ -11,6 +11,7 @@
     @extend .py-4;
     background-color: transparent;
     text-decoration: none !important;
+    @extend .has-text-weight-semibold;
   }
   .message-body {
     @extend .p-0;

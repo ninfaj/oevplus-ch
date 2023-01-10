@@ -11,6 +11,8 @@ intro:
     Arrivez tout simplement plus vite à destination avec l'app TP Plus ! Affichez les correspondances vers n'importe quelle destination en Suisse et achetez le billet adéquat. L'app peut être composée selon les besoins personnels.
   buttonLabel: Voila un lien
   buttonHref: https://google.com
+  appLinkAndroid: https://play.google.com/store/apps/details?id=ch.glue.android.mezi
+  appLinkIOS: https://itunes.apple.com/ch/app/%C3%B6v-plus/id342335298?mt=8
 video:
   title: Vidéos
   text: Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam

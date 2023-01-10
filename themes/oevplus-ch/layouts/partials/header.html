@@ -13,28 +13,21 @@
     <div id="main-nav" class="navbar-end navbar-menu">
         {{ $currentSite := . }}
         {{ range where .Site.Pages ".Params.menu" "main" }}
-        {{ $active := and (eq $currentSite.Permalink .Permalink) "is-active" }}
-        <a class="navbar-item {{$active}}" href="{{ .Permalink }}">{{ .Name }}</a>
+            {{ $active := cond (eq $currentSite.Permalink .Permalink) "is-active" "" }}
+            <a class="navbar-item {{$active}}" href="{{ .Permalink }}">{{ .Name }}</a>
         {{ end }}
 
         <div class="navbar-item">
             <hr class="is-hidden-desktop" />
-            <div class="is-hidden-desktop tabs is-toggle is-small">
-                <ul>
+            <div class="is-hidden-desktop buttons is-centered mb-0">
                 {{ range .Site.Languages }}
                     {{ if eq . $.Site.Language }}
-                        <li class="is-active">
-                            <a href="{{ $currentUrl }}" data-set-preferred-language="{{ . }}">{{ .LanguageName }}</a>
-                        </li>
+                        <a href="{{ $currentUrl }}" class="button is-primary is-small" data-set-preferred-language="{{ . }}">{{ .LanguageName }}</a>
                     {{ end }}
                 {{ end }}
-                <hr class="dropdown-divider" />
                 {{ range $.Translations }}
-                    <li>
-                        <a href="{{ .Permalink }}" data-set-preferred-language="{{ .Language }}">{{ .Language.LanguageName }}</a>
-                    </li>
+                    <a href="{{ .Permalink }}" class="button is-text is-small" data-set-preferred-language="{{ .Language }}">{{ .Language.LanguageName }}</a>
                 {{ end }}
-                </ul>
             </div>
             <div class="dropdown is-right is-hidden-touch">
                 <div class="dropdown-trigger">
