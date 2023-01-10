@@ -26,13 +26,13 @@
                         <li class="is-active">
                             <a href="{{ $currentUrl }}" data-set-preferred-language="{{ . }}">{{ .LanguageName }}</a>
                         </li>
-                    {{ else }}
-                        {{ range $.Translations }}
-                            <li>
-                                <a href="{{ .Permalink }}" data-set-preferred-language="{{ .Language }}">{{ .Language.LanguageName }}</a>
-                            </li>
-                        {{ end }}
                     {{ end }}
+                {{ end }}
+                <hr class="dropdown-divider" />
+                {{ range $.Translations }}
+                    <li>
+                        <a href="{{ .Permalink }}" data-set-preferred-language="{{ .Language }}">{{ .Language.LanguageName }}</a>
+                    </li>
                 {{ end }}
                 </ul>
             </div>
@@ -50,12 +50,13 @@
                     {{ range .Site.Languages }}
                         {{ if eq . $.Site.Language }}
                             <a class="dropdown-item is-active" href="{{ $currentUrl }}" data-set-preferred-language="{{ . }}">{{ .LanguageName }}</a>
-                        {{ else }}
-                            {{ range $.Translations }}
-                                <a class="dropdown-item" href="{{ .Permalink }}" data-set-preferred-language="{{ .Language }}">{{ .Language.LanguageName }}</a>
-                            {{ end }}
                         {{ end }}
                     {{ end }}
+                    <hr class="dropdown-divider" />
+                    {{ range $.Translations }}
+                        <a class="dropdown-item" href="{{ .Permalink }}" data-set-preferred-language="{{ .Language }}">{{ .Language.LanguageName }}</a>
+                    {{ end }}
+
                     </div>
                 </div>
             </div>

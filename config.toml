@@ -15,6 +15,14 @@ DefaultContentLanguage = "de"
     languageName = "FR"
     weight = 2
 
+  [languages.it]
+    languageName = "IT"
+    weight = 3
+
+  [languages.en]
+    languageName = "EN"
+    weight = 4
+
 [markup.goldmark.renderer]
   unsafe = true
 
