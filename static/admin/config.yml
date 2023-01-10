@@ -183,7 +183,6 @@ collections:
         }
       - {
           label: "Advanced",
-          name: "advanced",
           create: false,
           delete: false,
           collapsed: true,

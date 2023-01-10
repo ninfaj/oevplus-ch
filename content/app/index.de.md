@@ -1,6 +1,5 @@
 ---
-advanced:
-  seoTitle: ÖV Plus App – einfach schneller ans Ziel.
+seoTitle: ÖV Plus App – einfach schneller ans Ziel.
 summary: Einfach schneller ans Ziel mit der öV Plus App! Lassen Sie sich zu
   jedem beliebigen Zielort in der Schweiz Verbindungen anzeigen und lösen Sie
   das passende Ticket. Die App kann nach den persönlichen Bedürfnissen
