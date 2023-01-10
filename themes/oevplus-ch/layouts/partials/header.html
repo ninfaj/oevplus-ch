@@ -1,5 +1,5 @@
 {{- $currentUrl := .Permalink -}}
-<nav class="navbar is-primary">
+<nav class="navbar is-primary is-fixed-top has-shadow">
     <div class="navbar-brand">
         <a class="navbar-item" href="{{ print .Site.BaseURL  $.Site.Language  }}">
             <img src='{{ (resources.Get "images/logo.svg").Permalink }}' alt="öv Plus" />
