@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.Language }}">
     <meta name="robots" content="noindex,follow" />
     <link rel="stylesheet" href='{{ (resources.Get "vendor/splide.min.css").Permalink }}'>
     <link rel="stylesheet" href='{{ (resources.Get "scss/app.scss" | resources.ToCSS | resources.Minify).Permalink }}' media="all">
@@ -9,6 +9,8 @@
         {{ $seoTitle = .Params.seoTitle }}
     {{ end }}
     <title>{{ $seoTitle }}</title>
+    <meta name="description" content="{{ .Summary }}" />
+    <meta name="keywords" content="{{ .Params.seoKeywords }}" />
     <body class="has-navbar-fixed-top">
         {{- partial "header.html" . -}}
         <main class="content">
