@@ -4,6 +4,11 @@
     <link rel="stylesheet" href='{{ (resources.Get "vendor/splide.min.css").Permalink }}'>
     <link rel="stylesheet" href='{{ (resources.Get "scss/app.scss" | resources.ToCSS | resources.Minify).Permalink }}' media="all">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ $seoTitle := print .Params.Title " | ÖV Plus" }}
+    {{ if .Params.seoTitle }}
+        {{ $seoTitle = .Params.seoTitle }}
+    {{ end }}
+    <title>{{ $seoTitle }}</title>
     <body class="has-navbar-fixed-top">
         {{- partial "header.html" . -}}
         <main class="content">
