@@ -2,7 +2,7 @@ backend:
   name: github
   repo: ninfaj/oevplus-ch
   branch: master # Branch to update (optional; defaults to master)
-locale: 'de'
+locale: "de"
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 collections:
@@ -22,8 +22,18 @@ collections:
           fields:
             [
               { label: "Text", name: "text", widget: "markdown" },
-              { label: "Button Label", name: "buttonLabel", widget: "string" },
-              { label: "Button Link", name: "buttonHref", widget: "string" },
+              {
+                label: "Button Label",
+                name: "buttonLabel",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Button Link",
+                name: "buttonHref",
+                widget: "string",
+                required: false,
+              },
             ],
         }
       - {
@@ -54,8 +64,8 @@ collections:
           summary: "{{fields.title}}",
           fields:
             [
-              {label: Title, name: "title", widget: "string"},
-              {label: Text, name: "text", widget: "markdown"},
+              { label: Title, name: "title", widget: "string" },
+              { label: Text, name: "text", widget: "markdown" },
               {
                 label: "Items",
                 name: "items",
@@ -65,31 +75,36 @@ collections:
                   [
                     { label: "Title", name: "title", widget: "string" },
                     { label: "Text", name: "text", widget: "markdown" },
-                    { label: "Image", name: "image", widget: "image", choose_url: false },
+                    {
+                      label: "Image",
+                      name: "image",
+                      widget: "image",
+                      choose_url: false,
+                    },
                     { label: "LinkHref", name: "linkHref", widget: "string" },
                     { label: "LinkLabel", name: "linkLabel", widget: "string" },
-                  ]
-              }
-            ]
+                  ],
+              },
+            ],
         }
-      - { label: "Content", name: "body", widget: "markdown" }
+      - { label: "Content", name: "body", widget: "markdown", required: false }
       - {
-        label: "SEO Title",
-        name: "seoTitle",
-        widget: "string",
-        required: false
-        }
-      - {
-        label: "SEO Description",
-        name: "summary",
-        widget: "text",
-        required: false
+          label: "SEO Title",
+          name: "seoTitle",
+          widget: "string",
+          required: false,
         }
       - {
-        label: "SEO Keywords",
-        name: "seoKeywords",
-        widget: "string",
-        required: false
+          label: "SEO Description",
+          name: "summary",
+          widget: "text",
+          required: false,
+        }
+      - {
+          label: "SEO Keywords",
+          name: "seoKeywords",
+          widget: "string",
+          required: false,
         }
 
   - name: "About"
@@ -105,10 +120,7 @@ collections:
           name: "intro",
           collapsed: true,
           widget: "object",
-          fields:
-            [
-              { label: "Text", name: "text", widget: "markdown" }
-            ],
+          fields: [{ label: "Text", name: "text", widget: "markdown" }],
         }
       - {
           label: "TUS",
@@ -130,22 +142,22 @@ collections:
         }
       - { label: "Content", name: "body", widget: "markdown" }
       - {
-        label: "SEO Title",
-        name: "seoTitle",
-        widget: "string",
-        required: false
+          label: "SEO Title",
+          name: "seoTitle",
+          widget: "string",
+          required: false,
         }
       - {
-        label: "SEO Description",
-        name: "summary",
-        widget: "text",
-        required: false
+          label: "SEO Description",
+          name: "summary",
+          widget: "text",
+          required: false,
         }
       - {
-        label: "SEO Keywords",
-        name: "seoKeywords",
-        widget: "string",
-        required: false
+          label: "SEO Keywords",
+          name: "seoKeywords",
+          widget: "string",
+          required: false,
         }
 
   - name: "App"
@@ -164,10 +176,18 @@ collections:
           fields:
             [
               { label: "Text", name: "text", widget: "markdown" },
-              { label: "Button Label", name: "buttonLabel", widget: "string" },
-              { label: "Button Link", name: "buttonHref", widget: "string" },
-              { label: "Link Android", name: "appLinkAndroid", widget: "string", required: false },
-              { label: "Link iOS", name: "appLinkIOS", widget: "string", required: false },
+              {
+                label: "Link Android",
+                name: "appLinkAndroid",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Link iOS",
+                name: "appLinkIOS",
+                widget: "string",
+                required: false,
+              },
             ],
         }
       - { label: "Content", name: "body", widget: "markdown" }
@@ -188,7 +208,13 @@ collections:
                 fields:
                   [
                     { label: "Title", name: "title", widget: "string" },
-                    { label: "Video", name: "video", widget: "file", choose_url: false, pattern: ['[a-z|_-]*\.mp4', "only mp4"] },
+                    {
+                      label: "Video",
+                      name: "video",
+                      widget: "file",
+                      choose_url: false,
+                      pattern: ['[a-z|_-]*\.mp4', "only mp4"],
+                    },
                   ],
               },
             ],
@@ -201,7 +227,12 @@ collections:
           fields:
             [
               { label: "Title", name: "title", widget: "string" },
-              { label: "Text", name: "text", widget: "markdown", required: false },
+              {
+                label: "Text",
+                name: "text",
+                widget: "markdown",
+                required: false,
+              },
               {
                 label: "Items",
                 name: "items",
@@ -216,22 +247,22 @@ collections:
             ],
         }
       - {
-        label: "SEO Title",
-        name: "seoTitle",
-        widget: "string",
-        required: false
+          label: "SEO Title",
+          name: "seoTitle",
+          widget: "string",
+          required: false,
         }
       - {
-        label: "SEO Description",
-        name: "summary",
-        widget: "text",
-        required: false
+          label: "SEO Description",
+          name: "summary",
+          widget: "text",
+          required: false,
         }
       - {
-        label: "SEO Keywords",
-        name: "seoKeywords",
-        widget: "string",
-        required: false
+          label: "SEO Keywords",
+          name: "seoKeywords",
+          widget: "string",
+          required: false,
         }
 
   - name: "Abfahrtsanzeige"
@@ -250,28 +281,38 @@ collections:
           fields:
             [
               { label: "Text", name: "text", widget: "markdown" },
-              { label: "Button Label", name: "buttonLabel", widget: "string" },
-              { label: "Button Link", name: "buttonHref", widget: "string" },
+              {
+                label: "Button Label",
+                name: "buttonLabel",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Button Link",
+                name: "buttonHref",
+                widget: "string",
+                required: false,
+              },
             ],
         }
       - { label: "Content", name: "body", widget: "markdown" }
       - {
-        label: "SEO Title",
-        name: "seoTitle",
-        widget: "string",
-        required: false
+          label: "SEO Title",
+          name: "seoTitle",
+          widget: "string",
+          required: false,
         }
       - {
-        label: "SEO Description",
-        name: "summary",
-        widget: "text",
-        required: false
+          label: "SEO Description",
+          name: "summary",
+          widget: "text",
+          required: false,
         }
       - {
-        label: "SEO Keywords",
-        name: "seoKeywords",
-        widget: "string",
-        required: false
+          label: "SEO Keywords",
+          name: "seoKeywords",
+          widget: "string",
+          required: false,
         }
 
   - name: "Ereignismeldungen"
@@ -290,28 +331,38 @@ collections:
           fields:
             [
               { label: "Text", name: "text", widget: "markdown" },
-              { label: "Button Label", name: "buttonLabel", widget: "string" },
-              { label: "Button Link", name: "buttonHref", widget: "string" },
+              {
+                label: "Button Label",
+                name: "buttonLabel",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Button Link",
+                name: "buttonHref",
+                widget: "string",
+                required: false,
+              },
             ],
         }
       - { label: "Content", name: "body", widget: "markdown" }
       - {
-        label: "SEO Title",
-        name: "seoTitle",
-        widget: "string",
-        required: false
+          label: "SEO Title",
+          name: "seoTitle",
+          widget: "string",
+          required: false,
         }
       - {
-        label: "SEO Description",
-        name: "summary",
-        widget: "text",
-        required: false
+          label: "SEO Description",
+          name: "summary",
+          widget: "text",
+          required: false,
         }
       - {
-        label: "SEO Keywords",
-        name: "seoKeywords",
-        widget: "string",
-        required: false
+          label: "SEO Keywords",
+          name: "seoKeywords",
+          widget: "string",
+          required: false,
         }
 
   - name: "Fahrplan"
@@ -330,8 +381,18 @@ collections:
           fields:
             [
               { label: "Text", name: "text", widget: "markdown" },
-              { label: "Button Label", name: "buttonLabel", widget: "string" },
-              { label: "Button Link", name: "buttonHref", widget: "string" },
+              {
+                label: "Button Label",
+                name: "buttonLabel",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: "Button Link",
+                name: "buttonHref",
+                widget: "string",
+                required: false,
+              },
             ],
         }
       - { label: "Content", name: "body", widget: "markdown", required: false }
@@ -344,29 +405,33 @@ collections:
           widget: "object",
           fields:
             [
-              {label: "Von", name: "start", widget: "string"},
-              {label: "Bis", name: "end", widget: "string"},
-              {label: "Suchen", name: "search", widget: "string"},
-              {label: "Alle Eingabefelder anzeigen", name: "show_all", widget: "string"},
+              { label: "Von", name: "start", widget: "string" },
+              { label: "Bis", name: "end", widget: "string" },
+              { label: "Suchen", name: "search", widget: "string" },
+              {
+                label: "Alle Eingabefelder anzeigen",
+                name: "show_all",
+                widget: "string",
+              },
             ],
         }
       - {
-        label: "SEO Title",
-        name: "seoTitle",
-        widget: "string",
-        required: false
+          label: "SEO Title",
+          name: "seoTitle",
+          widget: "string",
+          required: false,
         }
       - {
-        label: "SEO Description",
-        name: "summary",
-        widget: "text",
-        required: false
+          label: "SEO Description",
+          name: "summary",
+          widget: "text",
+          required: false,
         }
       - {
-        label: "SEO Keywords",
-        name: "seoKeywords",
-        widget: "string",
-        required: false
+          label: "SEO Keywords",
+          name: "seoKeywords",
+          widget: "string",
+          required: false,
         }
 
   - name: "Contact"
@@ -387,10 +452,10 @@ collections:
           widget: "object",
           fields:
             [
-              {label: "Fullname", name: "fullname", widget: "string"},
-              {label: "Email", name: "email", widget: "string"},
-              {label: "Phone", name: "phone", widget: "string"},
-              {label: "Message", name: "message", widget: "string"},
-              {label: "Send", name: "send", widget: "string"},
+              { label: "Fullname", name: "fullname", widget: "string" },
+              { label: "Email", name: "email", widget: "string" },
+              { label: "Phone", name: "phone", widget: "string" },
+              { label: "Message", name: "message", widget: "string" },
+              { label: "Send", name: "send", widget: "string" },
             ],
         }
