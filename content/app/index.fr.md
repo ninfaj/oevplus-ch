@@ -15,7 +15,8 @@ intro:
   appLinkIOS: https://itunes.apple.com/ch/app/%C3%B6v-plus/id342335298?mt=8
 video:
   title: Vidéos
-  text: Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+  text: >
+    Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
     nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
     volutpat.
   items:
