@@ -1,13 +1,5 @@
 <section class="darkblue scheduleBox">
   <div class="container">
-
-    <!--
-      {{ $data := getJSON "https://fahrplan.oevplus.ch/api/autocomplete?query=ber" (dict "X-Tenant-Id" "oevplus")  }}
-      {{- range $data.suggestions -}}
-        <div>{{ .name }}</div>
-      {{- end -}}
-    -->
-
     {{ with .Site.GetPage "schedule" }}
     <div class="schedule-flex">
       <div class="schedule-input">

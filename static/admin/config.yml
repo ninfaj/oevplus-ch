@@ -215,6 +215,8 @@ collections:
     summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
+    editor: 
+      preview: false
     fields: # The fields for each document, usually in front matter
       - *title
       - *intro
@@ -231,6 +233,8 @@ collections:
     summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
+    editor: 
+      preview: false
     fields: # The fields for each document, usually in front matter
       - *title
       - *intro
@@ -246,6 +250,8 @@ collections:
     summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
+    editor: 
+      preview: false
     fields: # The fields for each document, usually in front matter
       - *title
       - *introApp
@@ -262,6 +268,8 @@ collections:
     summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
+    editor: 
+      preview: false
     fields: # The fields for each document, usually in front matter
       - *title
       - *intro
@@ -276,6 +284,8 @@ collections:
     summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
+    editor: 
+      preview: false
     fields: # The fields for each document, usually in front matter
       - *title
       - *intro
@@ -290,6 +300,8 @@ collections:
     summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
+    editor: 
+      preview: false
     fields: # The fields for each document, usually in front matter
       - *title
       - *intro
@@ -305,6 +317,8 @@ collections:
     summary: "{{filename}} – {{fields.title}}"
     create: false
     delete: false
+    editor: 
+      preview: false
     fields: # The fields for each document, usually in front matter
       - *title
       - *body
