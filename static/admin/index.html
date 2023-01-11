@@ -16,47 +16,6 @@
 
     CMS.registerPreviewStyle("/scss/app.min.css");
 
-    // FAQ
-    CMS.registerEditorComponent({
-      id: "button",
-      label: "Button",
-      pattern: /{{< button link="(.*)" label="(.*)" icon="(.*)" >}}/,
-      fields: [{
-        name: "link",
-        label: "link",
-        widget: "string"
-      },{
-        name: "label",
-        label: "label",
-        widget: "string"
-      },{
-        name: "icon",
-        label: "icon",
-        widget: "string",
-        default: "fa-angle-down"
-      }],
-      toBlock: function(obj) {
-        return `{{< button link="${obj.link}" label="${obj.label}" icon="${obj.icon}" >}}`;
-      },
-      fromBlock: function (match) {
-        return {
-          link: match[1],
-          label: match[2],
-          icon: match[3],
-        };
-      },
-      toPreview: createButton
-    });
-
-    function createButton(obj) {
-      return `<a href="${obj.link}" class="button is-primary">
-          ${obj.label}
-          <span class="icon">
-            <i class="fas ${obj.icon}" aria-hidden="true"></i>
-          </span>
-        </a>`;
-    }
-
   </script>
 
 </body>

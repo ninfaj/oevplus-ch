@@ -34,5 +34,27 @@
   </div>
 </section>
 {{ end }}
+
+{{- if .Params.services -}}
+<section class="white">
+  <div class="container">
+    <h2>{{ .Params.services.title }}</h2>
+    <p>{{ .Params.services.text | markdownify }}</p>
+
+    {{- range .Params.services.items -}}
+      <h3>{{ .title }}</h3>
+      <img src="{{ .image }}" title="{{ .title }}" />
+      <p>{{ .text }}</p>
+      <a class="button is-primary mb-4" href="{{ .linkHref }}">
+        <span>{{ .linkLabel }}</span>
+        <span class="icon">
+            <i class='fas fa-arrow-right' aria-hidden="true"></i>
+        </span>
+      </a>
+    {{- end -}}
+  </div>
+</section>
+{{- end -}}
+
 {{- partial "content.html" . -}}
 {{ end }}
