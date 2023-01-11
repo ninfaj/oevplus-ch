@@ -1,101 +1,111 @@
 ---
-title: APP
+summary: "Arrivez tout simplement plus vite à destination avec l’app TP Plus ! Affichez les correspondances vers n’importe quelle destination en Suisse et achetez le billet adéquat. L’app peut être composée selon les besoins personnels."
+title: "APP"
 intro:
   text: >
-    # ÖV Plus App - simply get to your destination faster.
+    # ÖV Plus App – plus vite à destination.
 
-    Simply get to your destination faster with the ÖV Plus app! Display connections to any destination in Switzerland and buy the right ticket. The app can be compiled according to your personal needs.
+    Arrivez tout simplement plus vite à destination avec l'app TP Plus ! Affichez les correspondances vers n'importe quelle destination en Suisse et achetez le billet adéquat. L'app peut être composée selon les besoins personnels.
+  buttonLabel: Voila un lien
   buttonHref: https://google.com
   appLinkAndroid: https://play.google.com/store/apps/details?id=ch.glue.android.mezi
   appLinkIOS: https://itunes.apple.com/ch/app/%C3%B6v-plus/id342335298?mt=8
 video:
-  title: Videos
-  text:  ENG - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  title: Vidéos
+  text: >
+    Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+    volutpat.
   items:
-    - title: Setup app
-      video: /images/uploads/max-rolle.mp4
-    - title: Buy tickets
+    - title: "Configurer l'application"
       video: /images/uploads/path-to-video.mp4
-    - title: Incidents
+    - title: "Acheter un billet"
+      video: /images/uploads/path-to-video.mp4
+    - title: "Messages"
       video: /images/uploads/path-to-video.mp4
 faq:
   title: FAQ
   items:
-    - title: Which tickets can I buy with the app?
-      text: ENG - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Quels billets puis-je acheter avec l'application ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-        :-)
-    - title: Can I get a refund for tickets purchased with the app?
-      text: The refund of tickets purchased with the app is possible in accordance with the
-        according to tariff T600.9. Refund before the start of validity. Please
-        contact the sales outlets of the partners listed below or contact
-        partners listed below or contact
-        [info@oevplus.ch](mailto:info@oevplus.ch) with the details of your ticket purchase.
-        ticket purchase.
-    - title: Can I transfer Mobile Tickets I have already purchased to another smartphone?
-        smartphone?
-      text: ENG - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Puis-je me faire rembourser les billets achetés avec l'application ?"
+      text: >
+        Le remboursement des billets achetés dans l'app est possible selon le
+        tarif T600.9. Remboursement avant le début de la validité. Pour les
+        remboursements, veuillez contacter les points de vente des partenaires
+        mentionnés ci-dessous ou vous adresser à
+        [info@oevplus.ch](mailto:info@oevplus.ch) avec les détails de votre
+        achat de billets.
+    - title: "Puis-je transférer des billets pour mobile déjà achetés sur un autre smartphone ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Which payment methods can I use to make purchases in the app?
-      text: ENG - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Quels moyens de paiement puis-je utiliser pour acheter dans l'application ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: My means of payment was not accepted. What can I do?
-      text: ENG - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Mon moyen de paiement n'a pas été accepté. Que puis-je faire ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Is it possible to generate a receipt for my purchased Mobile Ticket?
-        mobile ticket I have purchased?
-      text: ENG - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Est-il possible de générer un reçu pour le ticket mobile que j'ai acheté ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: I have not received a receipt. What could be the reason for that?
-      text: ENG - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Je n'ai pas reçu de reçu. À quoi cela peut-il être dû ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: How secure is my data?
-      text: ENG - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Dans quelle mesure mes données sont-elles en sécurité ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Who can I contact if I have questions or problems?
-      text: ENG - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "À qui puis-je m'adresser en cas de questions ou de problèmes ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-  text: ""
-seoTitle: ÖV Plus App - simply get to your destination faster.
-summary: Simply get to your destination faster with the ÖV Plus app! Display connections to any destination in Switzerland and buy the right ticket. The app can be compiled according to your personal needs.
-seoKeywords: APP Mobile schneller ans Ziel
+seoTitle: ÖV Plus App – plus vite à destination.
+seoKeywords: APP
 promo:
-  title: Accessibility - an app for all
+  title: Accessibilité - une application pour tous
   text: >
-    Here you could, for example, emphasise accessibility or otherwise describe an important feature of the app. You could also link something here (access4all, article in a magazine, or similar).
+    Ici, on pourrait par exemple mettre en avant l'accessibilité ou décrire une
+    autre caractéristique importante de l'application. On peut éventuellement y
+    mettre un lien (access4all, article dans un magazine ou autre).
 
 
-    ENG - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ENG - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat...
-  buttonLabel: Das ist ein Link
+    Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat..
+  buttonLabel: Voila un lien
   buttonHref: https://google.com
 weight: 3
 type: app
 menu: main
 ---
 
-## Functionalities
-With the app you benefit from the following functionalities:
+## Fonctions
+Avec l'application, vous bénéficiez des fonctionnalités suivantes :
 
-### Tickets
-- For the region: single tickets, day tickets and multi-ride tickets for the engadin mobil, Libero, Passepartout, Schwyz and TransReno networks
-- To the whole of Switzerland: Regional and Supersaver Tickets, Supersaver Day Tickets and City Tickets
-- Easy payment with credit and debit card, TWINT, Reka-Card, Apple Pay, Samsung Pay and Swisscom Easypay
+### Billets
+- Pour la région : billets individuels, cartes journalières et multicourses pour les communautés engadin mobil, Libero, Passepartout, Schwyz et TransReno.
+- Dans toute la Suisse : billets de parcours et billets dégriffés, cartes journalières dégriffées et City-Tickets.
+- Payer facilement avec une carte de crédit ou de débit, TWINT, Reka-Card, Apple Pay, Samsung Pay et Swisscom Easypay.
 
-### Live timetable
-- Information in real time
-- From your current location to any address in Switzerland
-- Next departures from my stop
+### Horaires en direct
+- Renseignements en temps réel
+- De votre position actuelle à n'importe quelle adresse en Suisse
+- Prochains départs depuis mon arrêt
 
-### Traffic information
-- Immediately informed about timetable deviations, events or road works
-- Push notifications for my favourite lines
+### Infos trafic
+- Information immédiate en cas de changement d'horaire, de manifestations ou de travaux
+- Notifications push pour mes lignes favorites
 
-### Map view
-- Special destinations such as bike rental stations, car parks, restaurants, cinemas, museums, embassies and many more
-- Helpful information, e.g. about temporarily postponed stops
+### Vue de la carte
+- Destinations spéciales telles que stations de location de vélos, parkings, restaurants, cinémas, musées, ambassades et bien plus encore
+- Informations utiles, par ex. en cas d'arrêts temporairement déplacés
 
-### Personalisation
-- Set stops and lines as favourites
-- Store SwissPass
-- Digital wallet for tickets, multi-ride cards and personal means of payment
+### Personnalisation
+- Définir les arrêts et les lignes comme favoris
+- Déposer un SwissPass
+- Porte-monnaie numérique pour les billets, les cartes multicourses et les moyens de paiement personnels
