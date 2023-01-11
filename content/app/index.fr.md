@@ -28,43 +28,48 @@ video:
 faq:
   title: FAQ
   items:
-    - title: Quels billets puis-je acheter avec l'application ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Quels billets puis-je acheter avec l'application ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Puis-je me faire rembourser les billets achetés avec l'application ?
-      text: Le remboursement des billets achetés dans l'app est possible selon le
+    - title: "Puis-je me faire rembourser les billets achetés avec l'application ?"
+      text: >
+        Le remboursement des billets achetés dans l'app est possible selon le
         tarif T600.9. Remboursement avant le début de la validité. Pour les
         remboursements, veuillez contacter les points de vente des partenaires
         mentionnés ci-dessous ou vous adresser à
         [info@oevplus.ch](mailto:info@oevplus.ch) avec les détails de votre
         achat de billets.
-    - title: Puis-je transférer des billets pour mobile déjà achetés sur un autre
-        smartphone ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Puis-je transférer des billets pour mobile déjà achetés sur un autre smartphone ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Quels moyens de paiement puis-je utiliser pour acheter dans l'application ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Quels moyens de paiement puis-je utiliser pour acheter dans l'application ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Mon moyen de paiement n'a pas été accepté. Que puis-je faire ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Mon moyen de paiement n'a pas été accepté. Que puis-je faire ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Est-il possible de générer un reçu pour le ticket mobile que j'ai acheté ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Est-il possible de générer un reçu pour le ticket mobile que j'ai acheté ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Je n'ai pas reçu de reçu. À quoi cela peut-il être dû ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Je n'ai pas reçu de reçu. À quoi cela peut-il être dû ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Dans quelle mesure mes données sont-elles en sécurité ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "Dans quelle mesure mes données sont-elles en sécurité ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: À qui puis-je m'adresser en cas de questions ou de problèmes ?
-      text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: "À qui puis-je m'adresser en cas de questions ou de problèmes ?"
+      text: >
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
 seoTitle: ÖV Plus App – plus vite à destination.
-summary: Arrivez tout simplement plus vite à destination avec l’app TP Plus !
-  Affichez les correspondances vers n’importe quelle destination en Suisse et
-  achetez le billet adéquat. L’app peut être composée selon les besoins
-  personnels.
+summary: Arrivez tout simplement plus vite à destination avec l’app TP Plus ! Affichez les correspondances vers n’importe quelle destination en Suisse et achetez le billet adéquat. L’app peut être composée selon les besoins personnels.
 seoKeywords: APP
 promo:
   title: Accessibilité - une application pour tous
