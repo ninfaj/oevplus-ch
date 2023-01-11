@@ -14,48 +14,48 @@ video:
   text:  IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
     nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
   items:
-    - title: App einrichten
+    - title: Impostazione dell'app
       video: /images/uploads/max-rolle.mp4
-    - title: Ticket kaufen
+    - title: Acquista il biglietto
       video: /images/uploads/path-to-video.mp4
-    - title: Ereignisinformationen
+    - title: Informazioni sull'evento
       video: /images/uploads/path-to-video.mp4
 faq:
   title: FAQ
   items:
-    - title: Welche Tickets kann ich mit der App kaufen?
-      text:  IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: Quali biglietti posso acquistare con l'app?
+      text: IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         :-)
-    - title: Kann ich mit der App gekaufte Ticket erstatten lassen?
-      text: Die Erstattung von Billetten, die in der App gekauft wurden, ist gemäss
-        Tarif T600.9 möglich. Erstattung vor Beginn der Gültigkeit. Bitte
-        kontaktieren Sie für Erstattungen die Verkaufsstellen der unten
-        aufgeführten Partner oder wenden Sie sich an
-        [info@oevplus.ch](mailto:info@oevplus.ch) mit den Angaben zu Ihrem
-        Ticketkauf.
-    - title: Kann ich bereits gekaufte Mobile-Tickets auch auf ein anderes Smartphone
-        übertragen?
-      text:  IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: Posso ottenere un rimborso per i biglietti acquistati con l'app?
+      text: Il rimborso dei biglietti acquistati con l'app è possibile in conformità con il
+        secondo la tariffa T600.9. Rimborso prima dell'inizio della validità. Per favore
+        contattare i punti vendita dei partner elencati di seguito o contattare
+        partner elencati di seguito o contattare
+        [info@oevplus.ch](mailto:info@oevplus.ch) con i dettagli dell'acquisto del biglietto.
+        acquisto dei biglietti.
+    - title: Posso trasferire i Mobile Ticket già acquistati su un altro smartphone?
+        textrtphone?
+      testo: IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Welche Zahlungsmittel kann ich für den Kauf in der App verwenden?
-      text:  IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: Quali mezzi di pagamento posso utilizzare per effettuare un acquisto nell'app?
+      text: IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Mein Zahlungsmittel wurde nicht akzeptiert. Was kann ich tun?
-      text:  IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: Il mio mezzo di pagamento non è stato accettato. Cosa posso fare?
+      text: IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Gibt es die Möglichkeit, eine Quittung für mein eingekauftes
-        Mobile-Ticket zu generieren?
-      text:  IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: È possibile generare una ricevuta per il Mobile Ticket acquistato?
+        textlietto mobile che ho acquistato?
+      testo: IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Ich habe keine Quittung erhalten. Woran kann das liegen?
-      text:  IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: Non ho ricevuto alcuna ricevuta. Quale potrebbe essere il motivo?
+      text: IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Wie sicher sind meine Daten?
-      text:  IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: Quanto sono sicuri i miei dati?
+      text: IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: An wen kann ich mich bei Fragen oder Problemen wenden?
-      text:  IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    - title: Chi posso contattare in caso di domande o problemi?
+      text: IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
   text: ""
 seoTitle: ÖV Plus App – einfach schneller ans Ziel.
@@ -65,14 +65,12 @@ summary: Einfach schneller ans Ziel mit der öV Plus App! Lassen Sie sich zu
   zusammengestellt werden.
 seoKeywords: APP Mobile schneller ans Ziel
 promo:
-  title:  IT - Barrierefreiheit – eine App für alle
+  title: "Accessibilità: un'app per tutti"
   text: >
-    IT - Hier könnte man z.B. die Barrierefreiheit hervorheben, bzw. sonst eine
-    wichtige Eigenschaft der App beschreiben. Evtl. kann man hier auch etwas
-    verlinken (access4all, Artikel in Zeitschrift, oder Ähnliches.
+    Qui si potrebbe, ad esempio, sottolineare l'accessibilità o descrivere in altro modo una caratteristica importante dell'applicazione. Potreste anche inserire un link a qualcosa (access4all, articolo di una rivista o simili).
 
-
-     IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex  IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat..
+    
+    IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat...
   buttonLabel: Das ist ein Link
   buttonHref: https://google.com
 weight: 3
@@ -80,28 +78,29 @@ type: app
 menu: main
 ---
 
-## IT - Funktionen
- IT - Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+## Funzionalità
+L'applicazione offre le seguenti funzionalità:
 
-### IT - Tickets
-- Für die Region: Einzelbillette, Tages- und Mehrfahrtenkarten für die Verbünde engadin mobil, Libero, Passepartout, Schwyz und TransReno
-- In die ganze Schweiz: Strecken- und Sparbillette, Spartageskarten und City-Tickets
-- Einfach bezahlen mit Kredit- und Debitkarte, TWINT, Reka-Card, Apple Pay, Samsung Pay sowie Swisscom Easypay
+### Biglietti
+- Per la regione: biglietti singoli, biglietti giornalieri e biglietti multicorsa per le reti engadin mobil, Libero, Passepartout, Schwyz e TransReno.
+- Per tutta la Svizzera: Biglietti regionali e Supersaver, biglietti giornalieri Supersaver e biglietti urbani.
+- Pagamento facile con carta di credito e di debito, TWINT, Reka-Card, Apple Pay, Samsung Pay e Swisscom Easypay
 
-### IT - Live-Fahrplan
-- Auskunft in Echtzeit
-- Vom aktuellen Standort zu jeder Adressein der Schweiz
-- Nächste Abfahrten ab meiner Haltestelle
+### Orario in diretta
+- Informazioni in tempo reale
+- Dalla vostra posizione attuale a qualsiasi indirizzo in Svizzera
+- Prossime partenze dalla mia fermata
 
-### IT - Verkehrsinfos
-- Sofort informiert bei Fahrplanabweichungen, Veranstaltungen oder Baustellen
-- Push-Benachrichtigungen für meine favorisierten Linien
+### Informazioni sul traffico
+- Informati immediatamente su deviazioni di orario, eventi o lavori stradali
+- Notifiche push per le mie linee preferite
 
-### IT - Kartenansicht
-- Sonderziele wie Veloverleihstationen, Parkhäuser, Restaurants, Kinos, Museen, Botschaften und viele mehr
-- Hilfreiche Infos, z.B. bei temporär verschobenen Haltestellen
+### Vista mappa
+- Destinazioni speciali come stazioni di noleggio biciclette, parcheggi, ristoranti, cinema, musei, ambasciate e molto altro ancora.
+- Informazioni utili, ad esempio sulle fermate temporaneamente posticipate.
 
-### IT - Personalisierung
-- Haltestellen und Linien als Favoriten festlegen
-- SwissPass hinterlegen
-- Digitales Portemonnaie für Tickets, Mehrfahrtenkarten und persönliche Zahlungsmittel
+### Personalizzazione
+- Impostare le fermate e le linee come preferite
+- Negozio SwissPass
+- Portafoglio digitale per biglietti, carte multicorsa e mezzi di pagamento personali
+

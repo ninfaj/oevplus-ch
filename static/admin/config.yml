@@ -1,3 +1,206 @@
+define:
+  - &title { label: "Title", name: "title", widget: "string" }
+  - &body {
+      label: "Content",
+      name: "body",
+      widget: "markdown",
+      required: false,
+    }
+  - &text { label: "Text", name: "text", widget: "markdown" }
+  - &seoTitle {
+      label: "SEO Title",
+      name: "seoTitle",
+      widget: "string",
+      required: false,
+    }
+  - &seoDescription {
+      label: "SEO Description",
+      name: "summary",
+      widget: "text",
+      required: false,
+    }
+  - &seoKeywords {
+      label: "SEO Keywords",
+      name: "seoKeywords",
+      widget: "string",
+      required: false,
+    }
+  - &image { label: "Image", name: "image", widget: "image", choose_url: false }
+  - &intro {
+      label: "Intro",
+      name: "intro",
+      collapsed: true,
+      widget: "object",
+      fields:
+        [
+          *text,
+          {
+            label: "Button Label",
+            name: "buttonLabel",
+            widget: "string",
+            required: false,
+          },
+          {
+            label: "Button Link",
+            name: "buttonHref",
+            widget: "string",
+            required: false,
+          },
+        ],
+    }
+  - &tus {
+      label: "TUS",
+      name: "tus",
+      widget: "list",
+      collapsed: true,
+      summary: "{{fields.title}}",
+      fields: [*title, *image, { label: "url", name: "url", widget: "string" }],
+    }
+  - &labelsFahrplan {
+      label: "Labels",
+      name: "labels",
+      create: false,
+      delete: false,
+      collapsed: true,
+      widget: "object",
+      fields:
+        [
+          { label: "Von", name: "start", widget: "string" },
+          { label: "Bis", name: "end", widget: "string" },
+          { label: "Suchen", name: "search", widget: "string" },
+          {
+            label: "Alle Eingabefelder anzeigen",
+            name: "show_all",
+            widget: "string",
+          },
+        ],
+    }
+  - &labels_contact {
+      label: "Labels",
+      name: "labels",
+      create: false,
+      delete: false,
+      collapsed: true,
+      widget: "object",
+      fields:
+        [
+          { label: "Fullname", name: "fullname", widget: "string" },
+          { label: "Email", name: "email", widget: "string" },
+          { label: "Phone", name: "phone", widget: "string" },
+          { label: "Message", name: "message", widget: "string" },
+          { label: "Send", name: "send", widget: "string" },
+        ],
+    }
+  - &carousel {
+      label: "Carousel",
+      name: "carousel",
+      widget: "list",
+      collapsed: true,
+      summary: "{{fields.title}}",
+      fields:
+        [
+          *title,
+          *text,
+          *image,
+          { label: "LinkHref", name: "linkHref", widget: "string" },
+          { label: "LinkLabel", name: "linkLabel", widget: "string" },
+        ],
+    }
+  - &services {
+      label: "Services",
+      name: "services",
+      widget: "object",
+      collapsed: true,
+      summary: "{{fields.title}}",
+      fields:
+        [
+          *title,
+          *text,
+          {
+            label: "Items",
+            name: "items",
+            collapsed: true,
+            widget: "list",
+            fields:
+              [
+                *title,
+                *text,
+                *image,
+                { label: "LinkHref", name: "linkHref", widget: "string" },
+                { label: "LinkLabel", name: "linkLabel", widget: "string" },
+              ],
+          },
+        ],
+    }
+  - &introApp {
+      label: "Intro",
+      name: "intro",
+      collapsed: true,
+      widget: "object",
+      fields:
+        [
+          *text,
+          {
+            label: "Link Android",
+            name: "appLinkAndroid",
+            widget: "string",
+            required: false,
+          },
+          {
+            label: "Link iOS",
+            name: "appLinkIOS",
+            widget: "string",
+            required: false,
+          },
+        ],
+    }
+  - &videos {
+      label: "Videos",
+      name: "video",
+      collapsed: true,
+      widget: "object",
+      fields:
+        [
+          *title,
+          *text,
+          {
+            label: "Videos",
+            name: "items",
+            widget: "list",
+            summary: "{{fields.title}}",
+            fields:
+              [
+                *title,
+                {
+                  label: "Video",
+                  name: "video",
+                  widget: "file",
+                  choose_url: false,
+                  pattern: ['[a-z|_-]*\.mp4', "only mp4"],
+                },
+              ],
+          },
+        ],
+    }
+  - &faq {
+      label: "FAQ",
+      name: "faq",
+      collapsed: true,
+      widget: "object",
+      fields:
+        [
+          *title,
+          { label: "Text", name: "text", widget: "markdown", required: false },
+          {
+            label: "Items",
+            name: "items",
+            widget: "list",
+            summary: "{{fields.title}}",
+            fields: [*title, *text],
+          },
+        ],
+    }
+
 backend:
   name: github
   repo: ninfaj/oevplus-ch
@@ -13,99 +216,14 @@ collections:
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Intro",
-          name: "intro",
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              { label: "Text", name: "text", widget: "markdown" },
-              {
-                label: "Button Label",
-                name: "buttonLabel",
-                widget: "string",
-                required: false,
-              },
-              {
-                label: "Button Link",
-                name: "buttonHref",
-                widget: "string",
-                required: false,
-              },
-            ],
-        }
-      - {
-          label: "Carousel",
-          name: "carousel",
-          widget: "list",
-          collapsed: true,
-          summary: "{{fields.title}}",
-          fields:
-            [
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Text", name: "text", widget: "markdown" },
-              {
-                label: "Image",
-                name: "image",
-                widget: "image",
-                choose_url: false,
-              },
-              { label: "LinkHref", name: "linkHref", widget: "string" },
-              { label: "LinkLabel", name: "linkLabel", widget: "string" },
-            ],
-        }
-      - {
-          label: "Services",
-          name: "services",
-          widget: "object",
-          collapsed: true,
-          summary: "{{fields.title}}",
-          fields:
-            [
-              { label: Title, name: "title", widget: "string" },
-              { label: Text, name: "text", widget: "markdown" },
-              {
-                label: "Items",
-                name: "items",
-                collapsed: true,
-                widget: "list",
-                fields:
-                  [
-                    { label: "Title", name: "title", widget: "string" },
-                    { label: "Text", name: "text", widget: "markdown" },
-                    {
-                      label: "Image",
-                      name: "image",
-                      widget: "image",
-                      choose_url: false,
-                    },
-                    { label: "LinkHref", name: "linkHref", widget: "string" },
-                    { label: "LinkLabel", name: "linkLabel", widget: "string" },
-                  ],
-              },
-            ],
-        }
-      - { label: "Content", name: "body", widget: "markdown", required: false }
-      - {
-          label: "SEO Title",
-          name: "seoTitle",
-          widget: "string",
-          required: false,
-        }
-      - {
-          label: "SEO Description",
-          name: "summary",
-          widget: "text",
-          required: false,
-        }
-      - {
-          label: "SEO Keywords",
-          name: "seoKeywords",
-          widget: "string",
-          required: false,
-        }
+      - *title
+      - *intro
+      - *carousel
+      - *services
+      - *body
+      - *seoTitle
+      - *seoDescription
+      - *seoKeywords
 
   - name: "About"
     label: "About"
@@ -114,51 +232,13 @@ collections:
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Intro",
-          name: "intro",
-          collapsed: true,
-          widget: "object",
-          fields: [{ label: "Text", name: "text", widget: "markdown" }],
-        }
-      - {
-          label: "TUS",
-          name: "tus",
-          widget: "list",
-          collapsed: true,
-          summary: "{{fields.title}}",
-          fields:
-            [
-              { label: "Title", name: "title", widget: "string" },
-              {
-                label: "Image",
-                name: "image",
-                widget: "image",
-                choose_url: false,
-              },
-              { label: "url", name: "url", widget: "string" },
-            ],
-        }
-      - { label: "Content", name: "body", widget: "markdown" }
-      - {
-          label: "SEO Title",
-          name: "seoTitle",
-          widget: "string",
-          required: false,
-        }
-      - {
-          label: "SEO Description",
-          name: "summary",
-          widget: "text",
-          required: false,
-        }
-      - {
-          label: "SEO Keywords",
-          name: "seoKeywords",
-          widget: "string",
-          required: false,
-        }
+      - *title
+      - *intro
+      - *tus
+      - *body
+      - *seoTitle
+      - *seoDescription
+      - *seoKeywords
 
   - name: "App"
     label: "App"
@@ -167,103 +247,14 @@ collections:
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Intro",
-          name: "intro",
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              { label: "Text", name: "text", widget: "markdown" },
-              {
-                label: "Link Android",
-                name: "appLinkAndroid",
-                widget: "string",
-                required: false,
-              },
-              {
-                label: "Link iOS",
-                name: "appLinkIOS",
-                widget: "string",
-                required: false,
-              },
-            ],
-        }
-      - { label: "Content", name: "body", widget: "markdown" }
-      - {
-          label: "Videos",
-          name: "video",
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Text", name: "text", widget: "markdown" },
-              {
-                label: "Videos",
-                name: "items",
-                widget: "list",
-                summary: "{{fields.title}}",
-                fields:
-                  [
-                    { label: "Title", name: "title", widget: "string" },
-                    {
-                      label: "Video",
-                      name: "video",
-                      widget: "file",
-                      choose_url: false,
-                      pattern: ['[a-z|_-]*\.mp4', "only mp4"],
-                    },
-                  ],
-              },
-            ],
-        }
-      - {
-          label: "FAQ",
-          name: "faq",
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              { label: "Title", name: "title", widget: "string" },
-              {
-                label: "Text",
-                name: "text",
-                widget: "markdown",
-                required: false,
-              },
-              {
-                label: "Items",
-                name: "items",
-                widget: "list",
-                summary: "{{fields.title}}",
-                fields:
-                  [
-                    { label: "Title", name: "title", widget: "string" },
-                    { label: "Text", name: "text", widget: "markdown" },
-                  ],
-              },
-            ],
-        }
-      - {
-          label: "SEO Title",
-          name: "seoTitle",
-          widget: "string",
-          required: false,
-        }
-      - {
-          label: "SEO Description",
-          name: "summary",
-          widget: "text",
-          required: false,
-        }
-      - {
-          label: "SEO Keywords",
-          name: "seoKeywords",
-          widget: "string",
-          required: false,
-        }
+      - *title
+      - *introApp
+      - *body
+      - *videos
+      - *faq
+      - *seoTitle
+      - *seoDescription
+      - *seoKeywords
 
   - name: "Abfahrtsanzeige"
     label: "Abfahrtsanzeige"
@@ -272,48 +263,12 @@ collections:
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Intro",
-          name: "intro",
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              { label: "Text", name: "text", widget: "markdown" },
-              {
-                label: "Button Label",
-                name: "buttonLabel",
-                widget: "string",
-                required: false,
-              },
-              {
-                label: "Button Link",
-                name: "buttonHref",
-                widget: "string",
-                required: false,
-              },
-            ],
-        }
-      - { label: "Content", name: "body", widget: "markdown" }
-      - {
-          label: "SEO Title",
-          name: "seoTitle",
-          widget: "string",
-          required: false,
-        }
-      - {
-          label: "SEO Description",
-          name: "summary",
-          widget: "text",
-          required: false,
-        }
-      - {
-          label: "SEO Keywords",
-          name: "seoKeywords",
-          widget: "string",
-          required: false,
-        }
+      - *title
+      - *intro
+      - *body
+      - *seoTitle
+      - *seoDescription
+      - *seoKeywords
 
   - name: "Ereignismeldungen"
     label: "Ereignismeldungen"
@@ -322,48 +277,12 @@ collections:
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Intro",
-          name: "intro",
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              { label: "Text", name: "text", widget: "markdown" },
-              {
-                label: "Button Label",
-                name: "buttonLabel",
-                widget: "string",
-                required: false,
-              },
-              {
-                label: "Button Link",
-                name: "buttonHref",
-                widget: "string",
-                required: false,
-              },
-            ],
-        }
-      - { label: "Content", name: "body", widget: "markdown" }
-      - {
-          label: "SEO Title",
-          name: "seoTitle",
-          widget: "string",
-          required: false,
-        }
-      - {
-          label: "SEO Description",
-          name: "summary",
-          widget: "text",
-          required: false,
-        }
-      - {
-          label: "SEO Keywords",
-          name: "seoKeywords",
-          widget: "string",
-          required: false,
-        }
+      - *title
+      - *intro
+      - *body
+      - *seoTitle
+      - *seoDescription
+      - *seoKeywords
 
   - name: "Fahrplan"
     label: "Fahrplan"
@@ -372,67 +291,13 @@ collections:
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Intro",
-          name: "intro",
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              { label: "Text", name: "text", widget: "markdown" },
-              {
-                label: "Button Label",
-                name: "buttonLabel",
-                widget: "string",
-                required: false,
-              },
-              {
-                label: "Button Link",
-                name: "buttonHref",
-                widget: "string",
-                required: false,
-              },
-            ],
-        }
-      - { label: "Content", name: "body", widget: "markdown", required: false }
-      - {
-          label: "Labels",
-          name: "labels",
-          create: false,
-          delete: false,
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              { label: "Von", name: "start", widget: "string" },
-              { label: "Bis", name: "end", widget: "string" },
-              { label: "Suchen", name: "search", widget: "string" },
-              {
-                label: "Alle Eingabefelder anzeigen",
-                name: "show_all",
-                widget: "string",
-              },
-            ],
-        }
-      - {
-          label: "SEO Title",
-          name: "seoTitle",
-          widget: "string",
-          required: false,
-        }
-      - {
-          label: "SEO Description",
-          name: "summary",
-          widget: "text",
-          required: false,
-        }
-      - {
-          label: "SEO Keywords",
-          name: "seoKeywords",
-          widget: "string",
-          required: false,
-        }
+      - *title
+      - *intro
+      - *body
+      - { <<: *labelsFahrplan }
+      - *seoTitle
+      - *seoDescription
+      - *seoKeywords
 
   - name: "Contact"
     label: "Contact"
@@ -441,21 +306,6 @@ collections:
     create: false
     delete: false
     fields: # The fields for each document, usually in front matter
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Content", name: "body", widget: "markdown" }
-      - {
-          label: "Labels",
-          name: "labels",
-          create: false,
-          delete: false,
-          collapsed: true,
-          widget: "object",
-          fields:
-            [
-              { label: "Fullname", name: "fullname", widget: "string" },
-              { label: "Email", name: "email", widget: "string" },
-              { label: "Phone", name: "phone", widget: "string" },
-              { label: "Message", name: "message", widget: "string" },
-              { label: "Send", name: "send", widget: "string" },
-            ],
-        }
+      - *title
+      - *body
+      - { <<: *labels_contact }
