@@ -1,9 +1,9 @@
 ---
-summary: Arrivez tout simplement plus vite à destination avec l’app TP Plus !
+summary: "Arrivez tout simplement plus vite à destination avec l’app TP Plus !
   Affichez les correspondances vers n’importe quelle destination en Suisse et
   achetez le billet adéquat. L’app peut être composée selon les besoins
-  personnels.
-title: APP
+  personnels."
+title: "APP"
 intro:
   text: >
     # ÖV Plus App – plus vite à destination.
@@ -19,11 +19,11 @@ video:
     nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
     volutpat.
   items:
-    - title: Configurer l'application
+    - title: "Configurer l'application"
       video: /images/uploads/path-to-video.mp4
-    - title: Acheter un billet
+    - title: "Acheter un billet"
       video: /images/uploads/path-to-video.mp4
-    - title: Messages
+    - title: "Messages"
       video: /images/uploads/path-to-video.mp4
 faq:
   title: FAQ
@@ -42,15 +42,13 @@ faq:
         smartphone ?
       text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Quels moyens de paiement puis-je utiliser pour acheter dans l'application
-        ?
+    - title: Quels moyens de paiement puis-je utiliser pour acheter dans l'application ?
       text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
     - title: Mon moyen de paiement n'a pas été accepté. Que puis-je faire ?
       text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    - title: Est-il possible de générer un reçu pour le ticket mobile que j'ai acheté
-        ?
+    - title: Est-il possible de générer un reçu pour le ticket mobile que j'ai acheté ?
       text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
     - title: Je n'ai pas reçu de reçu. À quoi cela peut-il être dû ?
