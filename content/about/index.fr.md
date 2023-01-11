@@ -13,7 +13,6 @@ intro:
 
     Françeais ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 tus:
-tus:
   -
     title: Auto AG Schwyz
     image: "/images/uploads/Auto AG Schwyz.png"
